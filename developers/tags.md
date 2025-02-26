@@ -9,9 +9,8 @@ Some of them expose special behavior within and/or outside the mod.
 ## Block Tags
 
 - `create:birttle`\
-  Info Here
-- `create:contraption_inventory_deny`\
-  Blocks which will not be counted as storages when a part of contraptions
+  Blocks that are connected to others\
+  Example: Doors, bells, value handles
 - `create:copycat_allow`\
   Blocks which players should be able to use in copycat blocks
 - `create:copycat_deny`\
@@ -27,6 +26,8 @@ Some of them expose special behavior within and/or outside the mod.
   Example: Cobweb
 - `create:non_movable` (`forge:relocation_not_supported` also works)\
   Blocks which cannot be moved by contraptions
+- `create:non_breakable`\
+  Blocks which cannot be broken by drills and saws
 - `create:passive_boiler_heaters`\
   Blocks which can provide passive heat to the steam engine multiblock. Not as strong as active Blaze Burners\
   Example: Campfire
@@ -42,9 +43,17 @@ Some of them expose special behavior within and/or outside the mod.
 - `create:wrench_pickup`\
   Blocks which can be broken and collected very quickly using a Wrench (Sneak-Right-Click)\
   Example: Rails, Various Redstone components
+- `#create:chest_mounted_storage` and `#create:simple_mounted_storage`\
+  For simple mounted storages
+- `#create:fallback_mounted_storage_blacklist`\
+  Blocks which shouldn't fallback to the fallback mounted storage handler
 - `create:roots`\
   Tree root blocks which should be harvested as part of a tree when cut by a Mechanical Saw\
   Example: Mangrove Roots
+- `create:sugar_cane_variants`\
+  Sugar-cane like blocks that can be harvested by the harvester
+- `create:non_harvestable`\
+  Blocks that should not be harvested by the harvester
 
 #### Fan processing block tags:
 
@@ -106,3 +115,10 @@ By default, configs are set to allowlist mode, and only water and lava are tagge
   Fluids which fans will consider as catalysts for smoking via fan processing.
 - `create:fan_processing_catalysts/splashing`\
   Fluids which fans will consider as catalysts for splashing via fan processing.
+
+## Entity Tags
+
+- `create:blaze_burner_capturable`\
+  Entities which can be captured by blaze burner cages
+- `create:ignore_seat`\
+  Entities which should not sit in seats
