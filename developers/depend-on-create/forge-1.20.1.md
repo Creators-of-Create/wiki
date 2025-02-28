@@ -2,8 +2,8 @@
 minecraft_version: 1.20.1
 # TODO - Update
 create_version: 6.0.0-55
-ponder_version: 1.0.30
-flywheel_version: 1.0.0-beta-205
+ponder_version: 1.0.36
+flywheel_version: 1.0.0-beta-215
 registrate_version: MC1.20-1.3.3
 
 prev: false
