@@ -8,7 +8,7 @@ Some of them expose special behavior within and/or outside the mod.
 
 ## Block Tags
 
-- `create:birttle`\
+- `create:brittle`\
   Blocks that are connected to others\
   Example: Doors, bells, value handles
 - `create:copycat_allow`\
