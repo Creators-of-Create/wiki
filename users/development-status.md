@@ -1,11 +1,6 @@
 Welcome! This is the page about our current development status and goals, mostly in regard to mod versions and
 supported versions of the game.
 
-We are currently working on a port to NeoForge 1.21 and new features for Create 0.6.
-
-We are confident that we have reached the final stages of development for this next update.
-Please hang in there as we take care of the final important steps to make it happen.
-
 Sadly, we cannot give out ETA's for future releases. We are not a game studio and progress on this project depends on
 many unpredictable factors. Additionally, Specific dates result in a lot higher pressure than you might think, and the
 last thing we want is to give up on making features perfect for you just so it can be ready in time.
@@ -13,9 +8,9 @@ last thing we want is to give up on making features perfect for you just so it c
 ## Supported Game Versions {#supported-versions}
 
 | Overview        |                        |
-| --------------- | ---------------------- |
+|-----------------|------------------------|
 | 1.21.2+         | Waiting on 1.21.1 Port |
-| 1.21.1          | In Progress            |
+| 1.21.1          | Continued Support      |
 | 1.20.2 - 1.20.6 | Skipped                |
 | 1.20.1          | Continued Support      |
 | 1.19.4          | Skipped                |
