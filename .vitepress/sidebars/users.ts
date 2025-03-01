@@ -95,7 +95,7 @@ export default {
               link: "/users/about/development-status",
             },
             { text: "Supporting Create", link: "/users/about/support-create" },
-            { text: "View changelogs", link: "/users/about/changelogs/" },
+            { text: "View changelogs", link: "/users/changelogs/" },
           ]
         },        
       ],
