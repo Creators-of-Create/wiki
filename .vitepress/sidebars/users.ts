@@ -92,10 +92,10 @@ export default {
           items: [
             {
               text: "Development Status",
-              link: "/users/development-status",
+              link: "/users/about/development-status",
             },
-            { text: "Supporting Create", link: "/users/support-create" },
-            { text: "View changelogs", link: "/users/changelogs/" },
+            { text: "Supporting Create", link: "/users/about/support-create" },
+            { text: "View changelogs", link: "/users/about/changelogs/" },
           ]
         },        
       ],
