@@ -16,6 +16,7 @@ next: false
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
     maven { url = "https://mvn.devos.one/snapshots" } // Registrate
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
 }
 
 dependencies {
