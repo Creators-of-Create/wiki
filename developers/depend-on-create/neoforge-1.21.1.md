@@ -20,9 +20,9 @@ repositories {
 
 dependencies {
     modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false })
-    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}"))
-    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${flywheel_minecraft_version}:${flywheel_version}"))
-    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}"))
+    modImplementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}"))
+    modCompileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${flywheel_minecraft_version}:${flywheel_version}"))
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${flywheel_minecraft_version}:${flywheel_version}"))
     modImplementation("com.tterrag.registrate:Registrate:${registrate_version}"))
 }
 ```

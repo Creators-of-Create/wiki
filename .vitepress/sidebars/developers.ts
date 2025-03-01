@@ -12,12 +12,16 @@ export default {
           items: [
             {
               text: "Forge",
-              collapsed: true,
               items: [
                 {
                   text: "1.20.1",
                   link: "/developers/depend-on-create/forge-1.20.1",
                 },
+              ],
+            },
+            {
+              text: "NeoForge",
+              items: [
                 {
                   text: "1.21.1",
                   link: "/developers/depend-on-create/neoforge-1.21.1",
