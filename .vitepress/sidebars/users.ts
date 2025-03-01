@@ -10,10 +10,11 @@ export default {
         // { text: "Common Issues", link: "/users/common-issues" },
 
         //  Begin Wiki
-        // {
-        //   text: "Pondering",
-        //   link: "/users/pondering"
-        // },
+        //  Ponder
+         {
+           text: "Pondering",
+           link: "/users/pondering"
+         },
         
         // TODO - Redo this, it's really old and needs a update
         // {
