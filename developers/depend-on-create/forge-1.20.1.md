@@ -12,7 +12,7 @@ prev: false
 
 ::: code-group
 
-```groovy [build.gradle]
+```groovy [build.gradle [FG]]
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
     maven { url = "https://maven.tterrag.com" } // Registrate
@@ -28,7 +28,23 @@ dependencies {
 }
 ```
 
-```kotlin [build.gradle.kts]
+```groovy [build.gradle [MDG]]
+repositories {
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://maven.tterrag.com" } // Registrate
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+}
+
+dependencies {
+    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}")
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${flywheel_minecraft_version}:${flywheel_version}")
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    modImplementation("com.tterrag.registrate:Registrate:${registrate_version}")
+}
+```
+
+```kotlin [build.gradle.kts [NG]]
 repositories {
     maven("https://maven.createmod.net") // Create, Ponder, Flywheel
     maven("https://maven.tterrag.com") // Registrate
@@ -40,6 +56,21 @@ dependencies {
     compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
     runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
     implementation(fg.deobf("com.tterrag.registrate:Registrate:${property("registrate_version")}")!!)
+}
+```
+
+```kotlin [build.gradle.kts [MDG]]
+repositories {
+    maven("https://maven.createmod.net") // Create, Ponder, Flywheel
+    maven("https://maven.tterrag.com") // Registrate
+}
+
+dependencies {
+    modImplementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}") { isTransitive = false }
+    modImplementation("net.createmod.ponder:Ponder-Forge-${property("minecraft_version")}:${property("ponder_version")}")
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
+    modImplementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
 }
 ```
 

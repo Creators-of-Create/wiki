@@ -20,11 +20,11 @@ repositories {
 }
 
 dependencies {
-    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false })
-    modImplementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}"))
-    modCompileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${flywheel_minecraft_version}:${flywheel_version}"))
-    modRuntimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${flywheel_minecraft_version}:${flywheel_version}"))
-    modImplementation("com.tterrag.registrate:Registrate:${registrate_version}"))
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
+    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${flywheel_minecraft_version}:${flywheel_version}")
+    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${flywheel_minecraft_version}:${flywheel_version}")
+    implementation("com.tterrag.registrate:Registrate:${registrate_version}"))
 }
 ```
 
@@ -35,11 +35,11 @@ repositories {
 }
 
 dependencies {
-    modImplementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}") { isTransitive = false }!!)
-    modImplementation("net.createmod.ponder:Ponder-Forge-${property("minecraft_version")}:${property("ponder_version")}")!!)
-    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
-    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
-    modImplementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")!!)
+    implementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}") { isTransitive = false }
+    implementation("net.createmod.ponder:Ponder-Forge-${property("minecraft_version")}:${property("ponder_version")}")
+    compileOnly("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
+    runtimeOnly("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
+    implementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
 }
 ```
 
