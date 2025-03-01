@@ -1,7 +1,6 @@
 ---
 minecraft_version: 1.21.1
-# TODO - Update
-create_version: 6.0.0-55
+create_version: 6.0.0-4
 ponder_version: 1.0.39
 flywheel_version: 1.0.0-9
 registrate_version: MC1.21-1.3.0+62
@@ -20,11 +19,11 @@ repositories {
 }
 
 dependencies {
-    implementation(fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false })
-    implementation(fg.deobf("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}"))
-    compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${flywheel_minecraft_version}:${flywheel_version}"))
-    runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}"))
-    implementation(fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}"))
+    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false })
+    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}"))
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${flywheel_minecraft_version}:${flywheel_version}"))
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}"))
+    modImplementation("com.tterrag.registrate:Registrate:${registrate_version}"))
 }
 ```
 
@@ -35,11 +34,11 @@ repositories {
 }
 
 dependencies {
-    implementation(fg.deobf("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}") { isTransitive = false }!!)
-    implementation(fg.deobf("net.createmod.ponder:Ponder-Forge-${property("minecraft_version")}:${property("ponder_version")}")!!)
-    compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
-    runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
-    implementation(fg.deobf("com.tterrag.registrate:Registrate:${property("registrate_version")}")!!)
+    modImplementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}") { isTransitive = false }!!)
+    modImplementation("net.createmod.ponder:Ponder-Forge-${property("minecraft_version")}:${property("ponder_version")}")!!)
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
+    modImplementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")!!)
 }
 ```
 
