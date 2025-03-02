@@ -1,6 +1,6 @@
 ---
 minecraft_version: 1.21.1
-create_version: 6.0.0-4
+create_version: 6.0.0-11
 ponder_version: 1.0.39
 flywheel_version: 1.0.0-9
 registrate_version: MC1.21-1.3.0+62
@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${flywheel_minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${flywheel_minecraft_version}:${flywheel_version}")
@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}") { isTransitive = false }
+    implementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}:slim") { isTransitive = false }
     implementation("net.createmod.ponder:Ponder-Forge-${property("minecraft_version")}:${property("ponder_version")}")
     compileOnly("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
