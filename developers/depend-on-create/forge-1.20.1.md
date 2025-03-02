@@ -25,6 +25,7 @@ dependencies {
     compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${flywheel_minecraft_version}:${flywheel_version}"))
     runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}"))
     implementation(fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}"))
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
 }
 ```
 
@@ -41,6 +42,7 @@ dependencies {
     modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${flywheel_minecraft_version}:${flywheel_version}")
     modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
     modImplementation("com.tterrag.registrate:Registrate:${registrate_version}")
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
 }
 ```
 
@@ -56,6 +58,7 @@ dependencies {
     compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
     runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")!!)
     implementation(fg.deobf("com.tterrag.registrate:Registrate:${property("registrate_version")}")!!)
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1")!!)
 }
 ```
 
@@ -71,6 +74,7 @@ dependencies {
     modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
     modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${property("flywheel_minecraft_version")}:${property("flywheel_version")}")
     modImplementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1")!!)
 }
 ```
 
