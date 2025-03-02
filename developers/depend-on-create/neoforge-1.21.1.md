@@ -2,7 +2,7 @@
 minecraft_version: 1.21.1
 create_version: 6.0.1-12
 ponder_version: 1.0.39
-flywheel_version: 1.0.0-9
+flywheel_version: 1.0.1-11
 registrate_version: MC1.21-1.3.0+62
 
 next: false
