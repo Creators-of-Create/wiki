@@ -6,8 +6,19 @@ export default {
       text: "For Users",
       link: "/users",
       items: [
-        // TODO - Finish this
-        // { text: "Common Issues", link: "/users/common-issues" },
+        //  Everything not related to mod guidance
+        {
+          text: "About Create",
+          collapsed: true,
+          items: [
+            {
+              text: "Development Status",
+              link: "/users/about/development-status",
+            },
+            { text: "Supporting Create", link: "/users/about/support-create" },
+            { text: "View changelogs", link: "/users/changelogs/" },
+          ]
+        },
 
         //  Begin Wiki
         //  Ponder
@@ -16,6 +27,9 @@ export default {
            link: "/users/pondering"
          },
         
+        // TODO - Finish this
+        // { text: "Common Issues", link: "/users/common-issues" },
+
         // TODO - Redo this, it's really old and needs a update
         // {
         //   text: "How to use Create Schematics",
@@ -36,9 +50,9 @@ export default {
         //   ],
         // },
 
-        //  Group addons/integrations together for clearer organization
+        //  Group integrations together for clearer organization
         {
-          text: "Addons & Integrations",
+          text: "Integrations",
           collapsed: true,
           items: [
             //  Computer Craft (might need to restructure nesting)
@@ -82,23 +96,9 @@ export default {
                 },
               ],
             },
-            //  Other addons here
+            //  Other integrations here?
           ]
-        },
-
-        //  Everything not related to mod guidance
-        {
-          text: "About Create",
-          collapsed: true,
-          items: [
-            {
-              text: "Development Status",
-              link: "/users/about/development-status",
-            },
-            { text: "Supporting Create", link: "/users/about/support-create" },
-            { text: "View changelogs", link: "/users/changelogs/" },
-          ]
-        },        
+        },  
       ],
     },
   ],
