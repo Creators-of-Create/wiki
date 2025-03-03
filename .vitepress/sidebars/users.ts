@@ -38,6 +38,19 @@ export default {
           collapsed: true,
           items: [
             {
+              text: "Logistics",
+              items: [
+                {
+                  text: "Packager",
+                  link: "/users/cc-tweaked-integration/logistics/packager",
+                },
+                {
+                  text: "Stock Ticker",
+                  link: "/users/cc-tweaked-integration/logistics/stock-ticker",
+                }
+              ],
+            },
+            {
               text: "Trains",
               items: [
                 {

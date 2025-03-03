@@ -1,0 +1,120 @@
+| Method                                 | Description                                                  |
+| -------------------------------------- | ------------------------------------------------------------ |
+| [`getItemCount()`](#getItemCount) | Counts the number of items in the connected inventory |
+| [`list()`](list)  | Lists all items in the connected inventory |
+| [`listDetailed()`](listDetailed)  | Lists all items in the connected inventory with details (slower) |
+| [`setAddress([address])`](#setAddress)            | Sets the packager's address |
+| [`makePackage()`](#makePackage)            | Makes a package |
+| [`checkPackage()`](#checkPackage)            | Checks the contents of the currently held package |
+
+---
+
+### `getItemCount()` {#getItemCount}
+
+Counts the number of items in the connected inventory.
+
+**Returns**
+
+- `number` The number of items in the connected inventory.
+
+---
+
+### `list()` {#list}
+
+Lists basic information about all items in the connected inventory.
+
+**Returns**
+
+- `table` with basic item information like: 
+```lua
+{
+  {
+    name = "minecraft:apple",
+    count = 1,
+  },
+  {
+    name = "minecraft:stick",
+    count = 1,
+  },
+}
+```
+
+---
+
+
+### `listDetailed()` {#listDetailed}
+
+Lists detailed information about all items in the connected inventory.
+
+**Returns**
+
+- `table` with detailed item information like: 
+```lua
+  {
+    count = 1,
+    itemGroups = {
+      {
+        id = "minecraft:food_and_drinks",
+        displayName = "Food & Drinks",
+      },
+    },
+    tags = {
+      [ "c:foods/fruit" ] = true,
+      [ "c:animal_foods" ] = true,
+      [ "minecraft:horse_food" ] = true,
+      [ "c:foods" ] = true,
+    },
+    name = "minecraft:apple",
+    maxCount = 64,
+    displayName = "Apple",
+  },
+  {
+    enchantments = {
+      {
+        level = 2,
+        name = "minecraft:knockback",
+        displayName = "Knockback II",
+      },
+    },
+    name = "minecraft:stick",
+    itemGroups = {},
+    tags = {
+      [ "c:rods/wooden" ] = true,
+      [ "c:rods" ] = true,
+    },
+    count = 1,
+    maxCount = 64,
+    displayName = "Stick",
+  },
+}
+```
+
+---
+
+
+### `setAddress([address])` {#setAddress}
+
+Sets the packager's address to the given variable until the computer is plugged out or the chunk is unloaded and reloaded.
+If you want to programatically assign it an address every time, it's a good idea to put .setAddress in a startup.lua file, so it applies the address on chunkload.
+
+If the address arg is nil, it'll make the packager name packages by it's normal behavior again.
+
+**Parameters**
+
+- _address?:_ `string = nil` Force every package to be addressed to `address`. Goes back to default if address is `nil`.
+
+---
+
+### `makePackage()` {#makePackage}
+
+Activates the packager like if it was powered by redstone. It operates by the same rule as a button press, but unlike a redstone signal, returns a value on if it actually succeeded at making a package.
+
+**Returns**
+- `boolean` whether a new package was made successfuly.
+
+---
+
+### `checkPackage()` {#checkPackage}
+
+**Returns**
+- `table` with detailed item information or `nil` if there's no package.
