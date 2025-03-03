@@ -1,8 +1,8 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [`getItemCount()`](#getItemCount) | Counts the number of items in the connected inventory |
-| [`list()`](list)  | Lists all items in the connected inventory |
-| [`listDetailed()`](listDetailed)  | Lists all items in the connected inventory with details (slower) |
+| [`list()`](#list)  | Lists all items in the connected inventory |
+| [`listDetailed()`](#listDetailed)  | Lists all items in the connected inventory with details (slower) |
 | [`setAddress([address])`](#setAddress)            | Sets the packager's address |
 | [`makePackage()`](#makePackage)            | Makes a package |
 | [`checkPackage()`](#checkPackage)            | Checks the contents of the currently held package |

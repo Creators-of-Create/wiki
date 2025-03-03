@@ -1,8 +1,8 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [`getItemCount()`](#getItemCount) | Counts the number of items in the network |
-| [`list()`](list)  | Lists all items in the storage |
-| [`listDetailed()`](listDetailed)  | Lists all items in the storage with details (slower) |
+| [`list()`](#list)  | Lists all items in the storage |
+| [`listDetailed()`](#listDetailed)  | Lists all items in the storage with details (slower) |
 | [`request(filter, [address])`](#request)            | Requests a package for the network |
 
 ---
