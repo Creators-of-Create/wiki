@@ -53,6 +53,55 @@ registrate_version = {{ $frontmatter.registrate_version }}
 
 :::
 
+#### Setting the mixin config
+
+If you encounter errors when trying
+to start Minecraft from your development environment after adding a development environment dependency on Create,
+it is necessary to add Create's mixin config to the program arguments.
+Add the following code to each Minecraft run configuration block.
+
+::: code-group
+
+```groovy [build.gradle(.kts) [NG]]
+arg("-mixin.config=create.mixins.json")
+```
+
+```groovy [build.gradle(.kts) [MDG]]
+programArgument("-mixin.config=create.mixins.json")
+```
+
+:::
+
+The following code shows a client run configuration with mixin refmap remapping and with unrelated code omitted.
+
+::: code-group
+
+```groovy{3-4,6} [build.gradle(.kts) [FG]]
+runs {
+    client {
+        property("mixin.env.remapRefMap", "true")
+        property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
+        arg("-mixin.config=create.mixins.json")
+    }
+}
+```
+
+```groovy{4-5,7} [build.gradle(.kts) [MDG]]
+neoForge {
+    runs {
+        configureEach {
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
+            programArgument("-mixin.config=create.mixins.json")
+        }
+    }
+}
+```
+
+:::
+
 ### Production Environment Dependency
 
 This type of dependency is added to the `neoforge.mods.toml` file so that NeoForge knows your mod will not work without
@@ -66,7 +115,7 @@ Add the following dependency definition to your `neoforge.mods.toml` file,
 replacing `${modid}` with your mod's ID. This tells Forge that your mod depends on Create.
 If Create is not present or is outdated, NeoForge will display an error screen explaining this to the user.
 
-```toml-vue   
+```toml-vue
 [[dependencies.${mod_id}]]
     modId="create"
     type="required"

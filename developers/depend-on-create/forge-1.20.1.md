@@ -92,7 +92,7 @@ registrate_version = {{ $frontmatter.registrate_version }}
 
 :::
 
-#### Mixin Refmap Remapping
+#### Mixin Refmap Remapping & Setting the mixin config
 
 If you encounter errors when trying
 to start Minecraft from your development environment after adding a development environment dependency on Create,
@@ -101,25 +101,53 @@ Add the following code to each Minecraft run configuration block.
 
 ::: code-group
 
-```groovy [build.gradle(.kts)]
+```groovy [build.gradle(.kts) [FG]]
 property("mixin.env.remapRefMap", "true")
 property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
+arg("-mixin.config=create.mixins.json")
+```
+
+```groovy [build.gradle(.kts) [MDG]]
+property("mixin.env.remapRefMap", "true")
+property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
+programArgument("-mixin.config=create.mixins.json")
 ```
 
 :::
 
 The following code shows a client run configuration with mixin refmap remapping and with unrelated code omitted.
 
-```groovy{4-5}
+::: code-group
+
+```groovy{4-5,7} [build.gradle(.kts) [FG]]
 minecraft {
     runs {
         client {
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
+            arg("-mixin.config=create.mixins.json")
         }
     }
 }
 ```
+
+```groovy{4-5,7} [build.gradle(.kts) [MDG]]
+legacyForge {
+    runs {
+        configureEach {
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
+            programArgument("-mixin.config=create.mixins.json")
+        }
+    }
+}
+```
+
+:::
 
 ---
 
