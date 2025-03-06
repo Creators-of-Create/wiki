@@ -92,62 +92,30 @@ registrate_version = {{ $frontmatter.registrate_version }}
 
 :::
 
-#### Mixin Refmap Remapping & Setting the mixin config
+#### Mixin Refmap Remapping [FG]
 
 If you encounter errors when trying
 to start Minecraft from your development environment after adding a development environment dependency on Create,
 it is necessary to remap Create's mixin refmap.
 Add the following code to each Minecraft run configuration block.
 
-::: code-group
-
-```groovy [build.gradle(.kts) [FG]]
+```groovy
 property("mixin.env.remapRefMap", "true")
 property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
-
-arg("-mixin.config=create.mixins.json")
 ```
-
-```groovy [build.gradle(.kts) [MDG]]
-property("mixin.env.remapRefMap", "true")
-property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
-
-programArgument("-mixin.config=create.mixins.json")
-```
-
-:::
 
 The following code shows a client run configuration with mixin refmap remapping and with unrelated code omitted.
 
-::: code-group
-
-```groovy{4-5,7} [build.gradle(.kts) [FG]]
+```groovy{4-5}
 minecraft {
     runs {
         client {
             property("mixin.env.remapRefMap", "true")
             property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
-
-            arg("-mixin.config=create.mixins.json")
         }
     }
 }
 ```
-
-```groovy{4-5,7} [build.gradle(.kts) [MDG]]
-legacyForge {
-    runs {
-        configureEach {
-            property("mixin.env.remapRefMap", "true")
-            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
-
-            programArgument("-mixin.config=create.mixins.json")
-        }
-    }
-}
-```
-
-:::
 
 ---
 
@@ -167,7 +135,7 @@ If Create is not present or is outdated, Forge will display an error screen expl
 [[dependencies.${modid}]]
     modId="create"
     mandatory=true
-    versionRange="[{{ create_version_no_build_number }},)"
+    versionRange="[{{ create_version_no_build_number }},{{ next_minor_version }})"
     ordering="NONE"
     side="BOTH"
 ```

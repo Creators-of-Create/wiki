@@ -3,6 +3,9 @@
 import {useData} from "vitepress";
 
 const create_version_no_build_number = useData().frontmatter.value.create_version.split("-")[0];
+
+const _split = create_version_no_build_number.split(".");
+const next_minor_version = `${_split[0]}.${Number(_split[1]) + 1}.0`;
 </script>
 
 # Depending on Create
