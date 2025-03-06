@@ -94,8 +94,8 @@ Lists detailed information about all items in the connected inventory.
 
 ### `setAddress([address])` {#setAddress}
 
-Sets the packager's address to the given variable until the computer is plugged out or the chunk is unloaded and reloaded.
-If you want to programatically assign it an address every time, it's a good idea to put .setAddress in a startup.lua file, so it applies the address on chunkload.
+Sets the packager's address to the given variable until it tries to make a package with no computer attached, at which point it forgets about it and goes back to normal behavior.
+If you want to programatically assign it an address every time, it's a good idea to put .setAddress in a startup.lua file, so it applies the address you want on chunkload.
 
 If the address arg is nil, it'll make the packager name packages by it's normal behavior again.
 
