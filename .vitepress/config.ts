@@ -46,6 +46,10 @@ export default defineConfig({
       pattern: "https://github.com/Creators-of-Create/wiki/edit/main/:path",
       text: "Edit this page on GitHub",
     },
+
+    markdown: {
+      math: true
+    }
   },
 
   srcExclude: ["**/README.md"],

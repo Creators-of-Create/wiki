@@ -16,4 +16,5 @@ When two mechanical components are connected by a shaft, any rotational force pr
 
 A Mechanical Belt must be placed between two shafts. The shafts must be horizontal, parallel to each other, and perpendicular to the belt itself, and they must be aligned horizontally, vertically, or diagonally\*. No obstruction can exist between the two endpoints with the exception of other shafts. An Andesite/Brass Casing can be placed over any segment of a mechanical belt, including segments that contain shafts, to encase it.
 
-> **\* NOTE:** You cannot have any other diagonal angles other than 45°.
+> [!IMPORTANT]
+> You cannot have any other diagonal angles other than 45°.
