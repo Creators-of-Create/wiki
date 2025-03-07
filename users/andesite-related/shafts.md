@@ -4,6 +4,8 @@ The shaft is a basic mechanical component in Create. A shaft can be used to conn
 
 <img src="../assets/blocks/shaft.png" alt="Shaft" height="256"/>
 
+An Encased Shaft is created by right-clicking a shaft with an Andesite Casing or a Brass Casing, taking up an entire block to allow shafts to cleanly pass through walls. This still allows the shaft to relay rotation but prevents belts from being placed on the shaft.
+
 ## Usage
 
 ### Connecting Components

@@ -2,6 +2,8 @@
 
 Pondering is an in-game guide system that allows the player to quickly get information about Create blocks. The pondering screen shows an example contraption that explains the functions of the block.
 
+![Ponder](../assets/ponder_logo.png)
+
 ## Usage
 
 The full Ponder Index can be accessed through the Create menu by clicking the Engineer's Goggles icon in the pause menu.

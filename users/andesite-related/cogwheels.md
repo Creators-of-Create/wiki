@@ -1,8 +1,8 @@
 # Cogwheels
 
-The Cogwheel is a basic mechanical component in Create that relays rotation.
+The Cogwheel is a basic mechanical component in Create that relays rotation in a straight line and to adjacent cogwheels.
 
-The Large Cogwheel is a larger variant of the cogwheel that can relay rotation around corners and power Rotation Speed Controllers.
+The Large Cogwheel is a larger variant of the cogwheel that can relay rotation around corners, allow for change in Rotation Speed when connected to its smaller Counterpart, and power Rotation Speed Controllers.
 
 <img src="../assets/blocks/cogwheel.png" alt="Cogwheel" width="256"/>
 <img src="../assets/blocks/large_cogwheel.png" alt="Cogwheel" width="256"/>

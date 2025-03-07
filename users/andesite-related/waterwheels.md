@@ -2,7 +2,11 @@
 
 The Water Wheel is a source of rotational power. It generates Rotational Force when water flows over it.
 
+<img src="../assets/blocks/waterwheel.png" alt="Waterwheel" width="256"/>
+
 Due to the fact that the materials required to craft it are easily accessible, the Water Wheel serves as the simplest automatic generator and can be made very early in the game.
+
+Stress Capacity = 16SU per RPM
 
 Total stress capacity can be increased by adding more wheels in parallel.
 

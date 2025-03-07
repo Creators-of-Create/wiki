@@ -2,6 +2,8 @@
 
 A Mechanical Belt is a mechanical component that conveys rotation and moves items and entities.
 
+![Belt](../assets/items/belt.png)
+
 ## Usage
 
 ### Placement
