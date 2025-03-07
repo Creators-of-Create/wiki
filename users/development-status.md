@@ -7,19 +7,19 @@ last thing we want is to give up on making features perfect for you just so it c
 
 ## Supported Game Versions {#supported-versions}
 
-| Overview        |                        |
-|-----------------|------------------------|
-| 1.21.2+         | Waiting on 1.21.1 Port |
-| 1.21.1          | Continued Support      |
-| 1.20.2 - 1.20.6 | Skipped                |
-| 1.20.1          | Continued Support      |
-| 1.19.4          | Skipped                |
-| 1.19.2          | Available (0.5.1)      |
-| 1.18.2          | Available (0.5.1)      |
-| 1.17.x          | Skipped                |
-| 1.16.5          | Available (0.3.2)      |
-| 1.15.2          | Available (0.3.1)      |
-| 1.14.4          | Available (0.2.3)      |
+| Overview        |                   |
+|-----------------|-------------------|
+| 1.21.2+         | Unsupported       |
+| 1.21.1          | Continued Support |
+| 1.20.2 - 1.21.0 | Skipped           |
+| 1.20.1          | Continued Support |
+| 1.19.4          | Skipped           |
+| 1.19.2          | Available (0.5.1) |
+| 1.18.2          | Available (0.5.1) |
+| 1.17.x          | Skipped           |
+| 1.16.5          | Available (0.3.2) |
+| 1.15.2          | Available (0.3.1) |
+| 1.14.4          | Available (0.2.3) |
 
 ### Fabric Loader {#fabric}
 
