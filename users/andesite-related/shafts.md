@@ -1,0 +1,17 @@
+# Shafts
+
+The shaft is a basic mechanical component in Create. A shaft can be used to connect two mechanical components such that the rotation of one rotates the other. Shafts also serve as the only blocks upon which Mechanical Belts can be placed.
+
+<img src="../assets/blocks/shaft.png" alt="Shaft" height="256"/>
+
+## Usage
+
+### Connecting Components
+
+When two mechanical components are connected by a shaft, any rotational force provided to either component will also be provided to the other component at the same speed. As such, if both components provide stress, this can cause the machine to become overstressed.
+
+### Mechanical Belts
+
+A Mechanical Belt must be placed between two shafts. The shafts must be horizontal, parallel to each other, and perpendicular to the belt itself, and they must be aligned horizontally, vertically, or diagonally\*. No obstruction can exist between the two endpoints with the exception of other shafts. An Andesite/Brass Casing can be placed over any segment of a mechanical belt, including segments that contain shafts, to encase it.
+
+> **\* NOTE:** You cannot have any other diagonal angles other than 45°.
