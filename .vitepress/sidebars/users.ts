@@ -81,17 +81,17 @@ export default {
           ]
         },
 
-        //  SU Generation
-        {
-          text: "Generating Stress",
-          collapsed: true,
-          items: [
-            {
-              text: "Rotational Force",
-              link: ""
-            },
-          ]
-        },
+        // //  SU Generation
+        // {
+        //   text: "Generating Stress",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "Rotational Force",
+        //       link: ""
+        //     },
+        //   ]
+        // },
 
         //  Ponder categories as is in game (mostly)
         {
@@ -138,10 +138,10 @@ export default {
               text: "Adjustable Chain Gearshift",
               link: "/users/andesite-related/adjustable-chain-gearshift"
             },
-            {
-              text: "Chain Conveyor",
-              link: ""
-            },
+            // {
+            //   text: "Chain Conveyor",
+            //   link: ""
+            // },
             //  Done - Needs Review
             {
               text: "Sequenced Gear Shift",
@@ -162,10 +162,10 @@ export default {
               text: "Hand Crank",
               link: "/users/andesite-related/hand-crank"
             },
-            {
-              text: "Waterwheels",
-              link: ""
-            },
+            // {
+            //   text: "Waterwheels",
+            //   link: ""
+            // },
             {
               text: "Windmill Bearing",
               link: "/users/andesite-related/windmill-bearing"
@@ -204,324 +204,325 @@ export default {
               text: "Mechanical Crafter",
               link: "/users/brass-related/mechanical-crafter"
             },
-            {
-              text: "Mechanical Drill",
-              link: ""
-            },
-            {
-              text: "Mechanical Saw",
-              link: ""
-            },
-            {
-              text: "Deployer",
-              link: ""
-            },
-            {
-              text: "Mechanical Arm",
-              link: ""
-            },
-            {
-              text: "Mechanical Piston",
-              link: ""
-            },
-            {
-              text: "Rope Pulley",
-              link: ""
-            },
-            {
-              text: "Elevator Pulley",
-              link: ""
-            },
-            {
-              text: "Mechanical Bearing",
-              link: ""
-            },
-            {
-              text: "Gantry Shaft",
-              link: ""
-            },
-            {
-              text: "Gantry Carriage",
-              link: ""
-            },
-            {
-              text: "Clockwork Bearing",
-              link: ""
-            },
-            {
-              text: "Display Board",
-              link: ""
-            },
-            {
-              text: "Crushing Wheel",
-              link: ""
-            },
+            // {
+            //   text: "Mechanical Drill",
+            //   link: ""
+            // },
+            // {
+            //   text: "Mechanical Saw",
+            //   link: ""
+            // },
+            // {
+            //   text: "Deployer",
+            //   link: ""
+            // },
+            // {
+            //   text: "Mechanical Arm",
+            //   link: ""
+            // },
+            // {
+            //   text: "Mechanical Piston",
+            //   link: ""
+            // },
+            // {
+            //   text: "Rope Pulley",
+            //   link: ""
+            // },
+            // {
+            //   text: "Elevator Pulley",
+            //   link: ""
+            // },
+            // {
+            //   text: "Mechanical Bearing",
+            //   link: ""
+            // },
+            // {
+            //   text: "Gantry Shaft",
+            //   link: ""
+            // },
+            // {
+            //   text: "Gantry Carriage",
+            //   link: ""
+            // },
+            // {
+            //   text: "Clockwork Bearing",
+            //   link: ""
+            // },
+            // {
+            //   text: "Display Board",
+            //   link: ""
+            // },
+            // {
+            //   text: "Crushing Wheel",
+            //   link: ""
+            // },
           ]
         },
-        {
-          text: "Fluid Manipulators",
-          collapsed: true,
-          items: [
-            {
-              text: "Fluid Pipe",
-              link: ""
-            },
-            {
-              text: "Mechanical Pump",
-              link: ""
-            },
-            {
-              text: "Fluid Valve",
-              link: ""
-            },
-            {
-              text: "Smart Fluid Pipe",
-              link: ""
-            },
-            {
-              text: "Hose Pulley",
-              link: ""
-            },
-            {
-              text: "Item Drain",
-              link: ""
-            },
-            {
-              text: "Spout",
-              link: ""
-            },
-            {
-              text: "Portable Fluid Interface",
-              link: ""
-            },
-            {
-              text: "Fluid Tank",
-              link: ""
-            },
-          ]
-        },
-        {
-          text: "Item Transportation",
-          collapsed: true,
-          items: [
-            {
-              text: "Belt",
-              link: ""
-            },
-            {
-              text: "List Filter",
-              link: ""
-            },
-            {
-              text: "Attribute Filter",
-              link: ""
-            },
-            {
-              text: "Chute",
-              link: ""
-            },
-            {
-              text: "Smart Chute",
-              link: ""
-            },
-            {
-              text: "Item Vault",
-              link: ""
-            },
-            {
-              text: "Depot",
-              link: ""
-            },
-            {
-              text: "Weighted Ejector",
-              link: ""
-            },
-            {
-              text: "Mechanical Arm",
-              link: ""
-            },
-            {
-              text: "Andesite Funnel",
-              link: ""
-            },
-            {
-              text: "Brass Funnel",
-              link: ""
-            },
-            {
-              text: "Andesite Tunnel",
-              link: ""
-            },
-            {
-              text: "Brass Tunnel",
-              link: ""
-            },
-            {
-              text: "Portable Storage Interface",
-              link: ""
-            },
-          ]
-        },
-        {
-          text: "High Logistics",
-          collapsed: true,
-          items: [
-            {
-              text: "Packager",
-              link: ""
-            },
-            {
-              text: "Stock Link",
-              link: ""
-            },
-            {
-              text: "Stock Ticker",
-              link: ""
-            },
-            {
-              text: "Package Frogport",
-              link: ""
-            },
-            {
-              text: "White Postbox",
-              link: ""
-            },
-            {
-              text: "Redstone Requester",
-              link: ""
-            },
-            {
-              text: "Red Table Cloth",
-              link: ""
-            },
-            {
-              text: "Factory Gauge",
-              link: ""
-            },
-            {
-              text: "Re-Packager",
-              link: ""
-            },
-            {
-              text: "Package Filter",
-              link: ""
-            },
-          ]
-        },
-        { 
-          text: "Logic Components",
-          collapsed: true,
-          items: [
-            {
-              text: "Smart Observer",
-              link: ""
-            },
-            {
-              text: "Threshold Switch",
-              link: ""
-            },
-            {
-              text: "Nixie Tube",
-              link: ""
-            },
-            {
-              text: "Redstone Contact",
-              link: ""
-            },
-            {
-              text: "Analog Lever",
-              link: ""
-            },
-            {
-              text: "Redstone Link",
-              link: ""
-            },
-            {
-              text: "Pulse Extender",
-              link: ""
-            },
-            {
-              text: "Pulse Repeater",
-              link: ""
-            },
-            {
-              text: "Pulse Timer",
-              link: ""
-            },
-            {
-              text: "Powereed Latch",
-              link: ""
-            },
-            {
-              text: "Powered Toggle Latch",
-              link: ""
-            },
-            {
-              text: "Rose Quartz Lamp",
-              link: ""
-            },
-          ]
-        },
-        {
-          text: "Movement Anchors",
-          collapsed: true,
-          items: [
-            {
-              text: "",
-              link: ""
-            }
-          ]
-        },
-        {
-          text: "Contraption Actors",
-          collapsed: true,
-          items: [
-            {
-              text: "",
-              link: ""
-            }
-          ]
-        },
-        {
-          text: "Block Attachment Utility",
-          collapsed: true,
-          items: [
-            {
-              text: "",
-              link: ""
-            }
-          ]
-        },
-        {
-          text: "Railway Equipment",
-          collapsed: true,
-          items: [
-            {
-              text: "",
-              link: ""
-            }
-          ]
-        },
-        {
-          text: "Aesthetics",
-          collapsed: true,
-          items: [
-            {
-              text: "",
-              link: ""
-            }
-          ]
-        },
-        {
-          text: "Creative Mode",
-          collapsed: true,
-          items: [
-            {
-              text: "",
-              link: ""
-            }
-          ]
-        },
+
+        // {
+        //   text: "Fluid Manipulators",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "Fluid Pipe",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Mechanical Pump",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Fluid Valve",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Smart Fluid Pipe",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Hose Pulley",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Item Drain",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Spout",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Portable Fluid Interface",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Fluid Tank",
+        //       link: ""
+        //     },
+        //   ]
+        // },
+        // {
+        //   text: "Item Transportation",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "Belt",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "List Filter",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Attribute Filter",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Chute",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Smart Chute",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Item Vault",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Depot",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Weighted Ejector",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Mechanical Arm",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Andesite Funnel",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Brass Funnel",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Andesite Tunnel",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Brass Tunnel",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Portable Storage Interface",
+        //       link: ""
+        //     },
+        //   ]
+        // },
+        // {
+        //   text: "High Logistics",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "Packager",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Stock Link",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Stock Ticker",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Package Frogport",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "White Postbox",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Redstone Requester",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Red Table Cloth",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Factory Gauge",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Re-Packager",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Package Filter",
+        //       link: ""
+        //     },
+        //   ]
+        // },
+        // { 
+        //   text: "Logic Components",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "Smart Observer",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Threshold Switch",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Nixie Tube",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Redstone Contact",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Analog Lever",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Redstone Link",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Pulse Extender",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Pulse Repeater",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Pulse Timer",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Powereed Latch",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Powered Toggle Latch",
+        //       link: ""
+        //     },
+        //     {
+        //       text: "Rose Quartz Lamp",
+        //       link: ""
+        //     },
+        //   ]
+        // },
+        // {
+        //   text: "Movement Anchors",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "",
+        //       link: ""
+        //     }
+        //   ]
+        // },
+        // {
+        //   text: "Contraption Actors",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "",
+        //       link: ""
+        //     }
+        //   ]
+        // },
+        // {
+        //   text: "Block Attachment Utility",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "",
+        //       link: ""
+        //     }
+        //   ]
+        // },
+        // {
+        //   text: "Railway Equipment",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "",
+        //       link: ""
+        //     }
+        //   ]
+        // },
+        // {
+        //   text: "Aesthetics",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "",
+        //       link: ""
+        //     }
+        //   ]
+        // },
+        // {
+        //   text: "Creative Mode",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "",
+        //       link: ""
+        //     }
+        //   ]
+        // },
         
         // TODO - Finish this
         // { text: "Common Issues", link: "/users/common-issues" },
