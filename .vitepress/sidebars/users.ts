@@ -81,6 +81,7 @@ export default {
           ]
         },
 
+        /*  Commented out until pages are fleshed out more
         //  SU Generation
         {
           text: "Generating Stress",
@@ -93,7 +94,6 @@ export default {
           ]
         },
 
-        /*  Commented out until pages are fleshed out more
         //  Ponder categories as is in game (mostly)
         {
           text: "Kinetic Blocks",
