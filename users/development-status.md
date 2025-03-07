@@ -11,6 +11,7 @@ last thing we want is to give up on making features perfect for you just so it c
 |-----------------|------------------------|
 | 1.21.2+         | Waiting on 1.21.1 Port |
 | 1.21.1          | Continued Support      |
+| 1.21.0          | Skipped                |
 | 1.20.2 - 1.20.6 | Skipped                |
 | 1.20.1          | Continued Support      |
 | 1.19.4          | Skipped                |
