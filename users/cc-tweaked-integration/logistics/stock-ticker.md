@@ -3,7 +3,8 @@
 | [`getItemCount()`](#getItemCount) | Counts the number of items in the network |
 | [`list()`](#list)  | Lists all items in the storage |
 | [`listDetailed()`](#listDetailed)  | Lists all items in the storage with details (slower) |
-| [`request(filter, [address])`](#request)            | Requests a package for the network |
+| [`requestFiltered(filter, [address])`](#requestFiltered)            | Requests a package for the network |
+| [`listPaymentInventory()`](#listPaymentInventory)  | Lists all items in the storage with details (slower) |
 
 ---
 
@@ -90,7 +91,7 @@ Lists detailed information about all items in the network.
 ---
 
 
-### `request(filter, [address])` {#request}
+### `requestFiltered(filter, [address])` {#requestFiltered}
 
 Requests for a package in the network with the given filter. The filter is a table of item traits that's evaluated as follows:
 
@@ -145,3 +146,25 @@ While:
 stockTicker.request({})
 ```
 Would request all items in the network, because all items would pass the empty filter.
+
+---
+
+### `listPaymentInventory()` {#listPaymentInventory}
+
+Lists basic information about the items inside the Stock Ticker (not the network!).
+
+**Returns**
+
+- `table` with basic item information like: 
+```lua
+{
+  {
+    name = "minecraft:apple",
+    count = 1,
+  },
+  {
+    name = "minecraft:stick",
+    count = 1,
+  },
+}
+

@@ -45,8 +45,28 @@ export default {
                   link: "/users/cc-tweaked-integration/logistics/packager",
                 },
                 {
+                  text: "Re-Packager",
+                  link: "/users/cc-tweaked-integration/logistics/repackager",
+                },
+                {
                   text: "Stock Ticker",
                   link: "/users/cc-tweaked-integration/logistics/stock-ticker",
+                },
+                {
+                  text: "Redstone Requester",
+                  link: "/users/cc-tweaked-integration/logistics/redstone-requester",
+                },
+                {
+                  text: "Table Cloth",
+                  link: "/users/cc-tweaked-integration/logistics/table-cloth",
+                },
+                {
+                  text: "Package Frogport",
+                  link: "/users/cc-tweaked-integration/logistics/package-frogport",
+                },
+                {
+                  text: "Postbox",
+                  link: "/users/cc-tweaked-integration/logistics/postbox",
                 }
               ],
             },
