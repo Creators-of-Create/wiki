@@ -1,11 +1,36 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
+| [`getAddress()`](#getAddress)            | Sets the packager's address |
+| [`setAddress([address])`](#setAddress)            | Sets the packager's address |
 | [`getItemCount()`](#getItemCount) | Counts the number of items in the connected inventory |
 | [`list()`](#list)  | Lists all items in the connected inventory |
 | [`listDetailed()`](#listDetailed)  | Lists all items in the connected inventory with details (slower) |
-| [`setAddress([address])`](#setAddress)            | Sets the packager's address |
 | [`makePackage()`](#makePackage)            | Makes a package |
 | [`checkPackage()`](#checkPackage)            | Checks the contents of the currently held package |
+
+---
+
+
+### `getAddress()` {#getAddress}
+
+Gets the Packager's address.
+
+**Returns**
+
+- `string` With the address currently in use. 
+
+---
+
+### `setAddress([address])` {#setAddress}
+
+Sets the Packager's address to the given variable until it tries to make a package with no computer attached, at which point it forgets about it and goes back to normal behavior.
+If you want to programatically assign it an address every time, it's a good idea to put .setAddress in a startup.lua file, so it applies the address you want on chunkload.
+
+If the address arg is nil, it'll go back to the default sign-based behavior again.
+
+**Parameters**
+
+- _address?:_ `string = nil` Force every package to be addressed to `address`. Goes back to default if address is `nil`.
 
 ---
 
@@ -88,20 +113,6 @@ Lists detailed information about all items in the connected inventory.
   },
 }
 ```
-
----
-
-
-### `setAddress([address])` {#setAddress}
-
-Sets the packager's address to the given variable until it tries to make a package with no computer attached, at which point it forgets about it and goes back to normal behavior.
-If you want to programatically assign it an address every time, it's a good idea to put .setAddress in a startup.lua file, so it applies the address you want on chunkload.
-
-If the address arg is nil, it'll make the packager name packages by it's normal behavior again.
-
-**Parameters**
-
-- _address?:_ `string = nil` Force every package to be addressed to `address`. Goes back to default if address is `nil`.
 
 ---
 
