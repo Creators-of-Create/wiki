@@ -115,9 +115,9 @@ tableCloth = peripheral.find("Create_TableCloth")
 if tableCloth.isShop() then
 tableCloth.setWares(
     { name = "minecraft:diamond"}, -- defaults to 1
-    { name = "redstone", count = 30 },
+    { name = "redstone", count = 30 }
 )
 tableCloth.setPriceTagItem("gold_ingot")
-tableCloth.setPriceTagCount("2")
+tableCloth.setPriceTagCount(2)
 end
 ```
