@@ -8,10 +8,19 @@
 | [`getPriceTagCount()`](#getPriceTagCount)            | Gets the Table Cloth's Pricetag item count|
 | [`setPriceTagCount([count])`](#setPriceTagCount)            | Sets the Table Cloth's Pricetag item count|
 | [`getWares()`](#getWares)            | Gets the Table Cloth's items on sale|
-| [`setWares([{[name = string], [count = number]}...])`](#configure)            | Sets the Table Cloth's items on sale |
+| [`setWares([{[name = string], [count = number]}...])`](#setWares)            | Sets the Table Cloth's items on sale |
 
 ---
 
+### `isShop()` {#isShop}
+
+Checks if the Table Cloth is a shop or not.
+
+**Returns**
+
+- `boolean`, True if it's a shop. 
+
+---
 
 ### `getAddress()` {#getAddress}
 
