@@ -12,6 +12,9 @@
 | [`setWares([{[name = string], [count = number]}...])`](#setWares)            | Sets the Table Cloth's items on sale |
 
 ---
+::: danger Important!
+Tablecloth is only available as a peripheral as a store or if there's an item on it. It will stay a peripheral as long as there is a computer/modem/turtle attached to it even when emptied.
+:::
 
 ### `isShop()` {#isShop}
 
