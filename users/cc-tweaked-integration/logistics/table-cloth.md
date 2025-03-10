@@ -104,6 +104,7 @@ Sets the Table Cloth's wares that get requested on purchase.
 - Each argument represents an item to be requested and is a table of the item `name`, like `create:wrench` or `apple` and the `count`, between `1` and `256`.
 - nil argument or a table with an unspecified `name` equates to an empty slot.
 - Unspecified `count` equates to `1`
+- If no items are provided, the tablecloth stops being a shop, and goes back to normal behaviour.
 
 **Parameters**
 
