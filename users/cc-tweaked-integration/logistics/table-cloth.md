@@ -12,7 +12,7 @@
 
 ---
 ::: danger Important!
-The Table Cloth is only available as a peripheral if it's a store or if there's an item on it. It will remain a peripheral as long as there is a computer/modem/turtle attached to it, even if it is emptied.
+The Table Cloth is only available as a peripheral if it's a store or if there's items on it. It will remain a peripheral as long as there is a computer/modem/turtle attached to it, even if it is emptied.
 :::
 
 ### `isShop()` {#isShop}
