@@ -1,6 +1,6 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`getAddress()`](#getAddress)            | Sets the Frogport's address |
+| [`getAddress()`](#getAddress)            | Gets the Frogport's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Frogport's address |
 
 ---
@@ -26,5 +26,3 @@ If the address arg is nil, it'll unset the address.
 
 - _address?:_ `string = nil`  Will grab packages addressed to `address`. Unsets if address is `nil`.
 
-
----
