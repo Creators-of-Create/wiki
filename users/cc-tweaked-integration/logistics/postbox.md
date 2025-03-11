@@ -1,6 +1,6 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`getAddress()`](#getAddress)            | Sets the Postbox's address |
+| [`getAddress()`](#getAddress)            | Gets the Postbox's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Postbox's address |
 
 ---
