@@ -1,8 +1,8 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [`isShop()`](#isShop)            | Returns true if the Table Cloth is a store |
-| [`getAddress()`](#getAddress)            | Sets the Redstone Requester's address |
-| [`setAddress([address])`](#setAddress)            | Sets the Redstone Requester's address |
+| [`getAddress()`](#getAddress)            | Sets the Table Cloth's address |
+| [`setAddress([address])`](#setAddress)            | Sets the Table Cloth's address |
 | [`getPriceTagItem()`](#getPriceTagItem)            | Gets the Table Cloth's Pricetag item|
 | [`setPriceTagItem([name])`](#setPriceTagItem)            | Sets the Table Cloth's Pricetag item|
 | [`getPriceTagCount()`](#getPriceTagCount)            | Gets the Table Cloth's Pricetag item count|
