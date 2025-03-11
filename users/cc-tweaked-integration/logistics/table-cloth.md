@@ -1,14 +1,14 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`isShop()`](#isShop)            | Returns true if the Table Cloth is a store |
-| [`getAddress()`](#getAddress)            | Sets the Table Cloth's address |
+| [`isShop()`](#isShop)            | Returns true if it's a store |
+| [`getAddress()`](#getAddress)            | Gets the Table Cloth's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Table Cloth's address |
-| [`getPriceTagItem()`](#getPriceTagItem)            | Gets the Table Cloth's Pricetag item|
-| [`setPriceTagItem([name])`](#setPriceTagItem)            | Sets the Table Cloth's Pricetag item|
-| [`getPriceTagCount()`](#getPriceTagCount)            | Gets the Table Cloth's Pricetag item count|
-| [`setPriceTagCount([count])`](#setPriceTagCount)            | Sets the Table Cloth's Pricetag item count|
-| [`getWares()`](#getWares)            | Gets the Table Cloth's items on sale|
-| [`setWares([{[name = string], [count = number]}...])`](#setWares)            | Sets the Table Cloth's items on sale |
+| [`getPriceTagItem()`](#getPriceTagItem)            | Gets the pricetag item |
+| [`setPriceTagItem([name])`](#setPriceTagItem)            | Sets the pricetag item |
+| [`getPriceTagCount()`](#getPriceTagCount)            | Gets the pricetag item count|
+| [`setPriceTagCount([count])`](#setPriceTagCount)            | Sets the pricetag item count|
+| [`getWares()`](#getWares)            | Gets the items being sold |
+| [`setWares([{[name = string], [count = number]}...])`](#setWares)            | Sets the items being sold with their counts |
 
 ---
 ::: danger Important!
