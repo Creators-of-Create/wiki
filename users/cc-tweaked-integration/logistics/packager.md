@@ -1,6 +1,6 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`getAddress()`](#getAddress)            | Sets the packager's address |
+| [`getAddress()`](#getAddress)            | Gets the packager's address |
 | [`setAddress([address])`](#setAddress)            | Sets the packager's address |
 | [`getItemCount()`](#getItemCount) | Counts the number of items in the connected inventory |
 | [`list()`](#list)  | Lists all items in the connected inventory |
