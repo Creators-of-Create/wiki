@@ -1,6 +1,6 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`getAddress()`](#getAddress)            | Sets the Re-Packager's address |
+| [`getAddress()`](#getAddress)            | Gets the Re-Packager's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Re-Packager's address |
 | [`makePackage()`](#makePackage)            | Makes a package |
 
