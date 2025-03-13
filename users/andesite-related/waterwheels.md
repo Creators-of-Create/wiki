@@ -3,18 +3,21 @@
 The Water Wheel is a source of rotational power. It generates Rotational Force when water flows over it.
 
 <img src="../assets/blocks/waterwheel.png" alt="Waterwheel" width="256"/>
+<img src="../assets/blocks/large_waterwheel.png" alt="Waterwheel" width="256"/>
 
 Due to the fact that the materials required to craft it are easily accessible, the Water Wheel serves as the simplest automatic generator and can be made very early in the game.
 
-Stress Capacity = 16SU per RPM
+Regular Wheel Stress Capacity = 16SU per RPM (256)
+
+Large Wheel Stress Capacity = 32SU per RPM (512)
 
 Total stress capacity can be increased by adding more wheels in parallel.
 
 ## Usage
 
-When water flows over a Water Wheel, it will begin to rotate. This rotational power can be conveyed to other Components from the Water Wheels' Shaft.
+When water flows over a Water Wheel, it will begin to rotate. This rotational power can be conveyed to other Components from the Water Wheels' Shaft. Compared to a regular Water Wheel, the Large Water Wheel rotates with half the speed, but generates twice the total stress capacity. You can speed up the Large Water Wheel by simply connecting a regular Water Wheel to it and supplying it with flowing water.
 
-As long as the water flows around the wheel in mostly one direction, the Wheel will generate Rotational Force.
+As long as the water flows around the wheel in one direction, the Wheel will generate Rotational Force.
 
 ## Appearance
 
