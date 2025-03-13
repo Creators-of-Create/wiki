@@ -6,7 +6,7 @@
 | [`list()`](#list)  | Lists all items in the connected inventory |
 | [`listDetailed()`](#listDetailed)  | Lists all items in the connected inventory with details (slower) |
 | [`makePackage()`](#makePackage)            | Makes a package |
-| [`checkPackage()`](#checkPackage)            | Checks the contents of the currently held package |
+| [`getPackageItems()`](#getPackageItems)            | Checks the contents of the currently held package |
 
 ---
 
@@ -125,7 +125,7 @@ Activates the packager like if it was powered by redstone. It operates by the sa
 
 ---
 
-### `checkPackage()` {#checkPackage}
+### `getPackageItems()` {#getPackageItems}
 
 **Returns**
 - `table` with detailed item information or `nil` if there's no package.
