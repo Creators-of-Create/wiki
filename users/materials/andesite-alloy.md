@@ -12,3 +12,60 @@ Andesite Alloy cannot be found naturally in the world but can be created through
 ## Application
 
 Andesite Alloy can be applied to any stripped log manually by right clicking to create Andesite Casings. This process can be automated with the use of Deployers.
+
+## Important Related Items & Blocks
+
+| Items             |
+| ----------------- |
+| Hand Crank        |
+| Clipboard         |
+| Minecart Coupling |
+
+| Blocks                     |
+| -------------------------- |
+| Analog Lever               |
+| Andesite Funnel            |
+| Andesite Table Cover       |
+| Andesite Tunnel            |
+| Basin                      |
+| Cart Assembler             |
+| Chain Conveyor             |
+| Clutch                     |
+| Cogwheel                   |
+| Contraption Controls       |
+| Crushing Wheel             |
+| Deployer                   |
+| Depot                      |
+| Desk Bell                  |
+| Display Board              |
+| Encased Chaindrive         |
+| Encased Fan                |
+| Gantry Carriage            |
+| Gantry Shaft               |
+| Gearbox                    |
+| Gearshift                  |
+| Item Hatch                 |
+| Linear Chassis             |
+| Mechanical Bearing         |
+| Mechanical Drill           |
+| Mechanical Harvester       |
+| Mechanical Mixer           |
+| Mechanical Plough          |
+| Mechanical Press           |
+| Mechanical Piston          |
+| Mechanical Roller          |
+| Mechanical Saw             |
+| Millstone                  |
+| Package Frogport           |
+| Portable Storage Interface |
+| Postboxes                  |
+| Radial Chassis             |
+| Redstone Link              |
+| Rope Pulley                |
+| Shaft                      |
+| Speedometer                |
+| Sticker                    |
+| Stressometer               |
+| Table Cloths               |
+| Vertical Gearbox           |
+| Windmill Sail              |
