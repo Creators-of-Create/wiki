@@ -3,6 +3,8 @@
 | [`getAddress()`](#getAddress)            | Sets the Re-Packager's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Re-Packager's address |
 | [`makePackage()`](#makePackage)            | Makes a package |
+| [`getPackageItems()`](#getPackageItems)            | Checks the contents of the currently held package |
+| [`getPackageAddress()`](#getPackageAddress)            | Checks the address of the currently held package |
 
 ---
 
@@ -36,3 +38,16 @@ Activates the Re-Packager like if it was powered by redstone. It operates by the
 **Returns**
 - `boolean` whether a new package was made successfuly.
 
+---
+
+### `getPackageItems()` {#getPackageItems}
+
+**Returns**
+- `table` with detailed item information or `nil` if there's no package.
+
+---
+
+### `getPackageAddress()` {#getPackageAddress}
+
+**Returns**
+- `string` with the package's address or `nil` if there's no package.
