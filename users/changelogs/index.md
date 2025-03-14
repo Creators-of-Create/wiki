@@ -9,6 +9,7 @@ The Create Project has gone through many iterations. You can find all of its cha
 - **[Version 6.0.0 - Post Production](6.0.0)**
   - [Patch 1](6.0.1)
   - [Patch 2](6.0.2)
+  - [Patch 3](6.0.3)
 
 ---
 
