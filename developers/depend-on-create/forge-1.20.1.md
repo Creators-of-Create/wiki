@@ -1,7 +1,7 @@
 ---
 minecraft_version: 1.20.1
 create_version: 6.0.2-52
-ponder_version: 1.0.51
+ponder_version: 1.0.71
 flywheel_version: 1.0.1
 registrate_version: MC1.20-1.3.3
 
