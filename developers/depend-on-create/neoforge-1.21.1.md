@@ -1,6 +1,6 @@
 ---
 minecraft_version: 1.21.1
-create_version: 6.0.2-46
+create_version: 6.0.3-46
 ponder_version: 1.0.45
 flywheel_version: 1.0.1
 registrate_version: MC1.21-1.3.0+62

@@ -22,8 +22,12 @@ export default defineConfig({
     },
 
     search: {
-      // TODO - Switch to Algolia Search post deployment
-      provider: "local",
+      provider: "algolia",
+      options: {
+        appId: 'O356MVE57L',
+        apiKey: 'a15318635c598eb4366b704d06801027',
+        indexName: 'createmod'
+      }
     },
 
     // https://vitepress.dev/reference/default-theme-config
@@ -49,4 +53,8 @@ export default defineConfig({
   },
 
   srcExclude: ["**/README.md"],
+  
+  sitemap: {
+    hostname: "https://wiki.createmod.net"
+  }
 });
