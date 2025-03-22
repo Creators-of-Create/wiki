@@ -10,6 +10,7 @@ The Create Project has gone through many iterations. You can find all of its cha
   - [Patch 1](6.0.1)
   - [Patch 2](6.0.2)
   - [Patch 3](6.0.3)
+  - [Patch 4](6.0.4)
 
 ---
 
