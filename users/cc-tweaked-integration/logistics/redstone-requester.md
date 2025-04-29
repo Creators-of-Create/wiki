@@ -76,7 +76,7 @@ Will request a package that crafts into a Diamond Pickaxe when provided to prope
 
 While:
 ```lua
-stockTicker.configure()
+redstoneRequester.configure()
 ```
 will clear the configuration.
 
