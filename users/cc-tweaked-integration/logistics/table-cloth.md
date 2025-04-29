@@ -1,18 +1,18 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`isShop()`](#isShop)            | Returns true if the Table Cloth is a store |
-| [`getAddress()`](#getAddress)            | Sets the Redstone Requester's address |
-| [`setAddress([address])`](#setAddress)            | Sets the Redstone Requester's address |
-| [`getPriceTagItem()`](#getPriceTagItem)            | Gets the Table Cloth's Pricetag item|
-| [`setPriceTagItem([name])`](#setPriceTagItem)            | Sets the Table Cloth's Pricetag item|
-| [`getPriceTagCount()`](#getPriceTagCount)            | Gets the Table Cloth's Pricetag item count|
-| [`setPriceTagCount([count])`](#setPriceTagCount)            | Sets the Table Cloth's Pricetag item count|
-| [`getWares()`](#getWares)            | Gets the Table Cloth's items on sale|
-| [`setWares([{[name = string], [count = number]}...])`](#setWares)            | Sets the Table Cloth's items on sale |
+| [`isShop()`](#isShop)            | Returns true if it's a store |
+| [`getAddress()`](#getAddress)            | Gets the Table Cloth's address |
+| [`setAddress([address])`](#setAddress)            | Sets the Table Cloth's address |
+| [`getPriceTagItem()`](#getPriceTagItem)            | Gets the pricetag item |
+| [`setPriceTagItem([name])`](#setPriceTagItem)            | Sets the pricetag item |
+| [`getPriceTagCount()`](#getPriceTagCount)            | Gets the pricetag item count|
+| [`setPriceTagCount([count])`](#setPriceTagCount)            | Sets the pricetag item count|
+| [`getWares()`](#getWares)            | Gets the items being sold |
+| [`setWares([{[name = string], [count = number]}...])`](#setWares)            | Sets the items being sold with their counts |
 
 ---
 ::: danger Important!
-Tablecloth is only available as a peripheral as a store or if there's an item on it. It will stay a peripheral as long as there is a computer/modem/turtle attached to it even when emptied.
+The Table Cloth is only available as a peripheral if it's a store or if there's items on it. It will remain a peripheral as long as there is a computer/modem/turtle attached to it, even if it is emptied.
 :::
 
 ### `isShop()` {#isShop}

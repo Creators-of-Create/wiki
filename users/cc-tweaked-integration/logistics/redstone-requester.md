@@ -1,9 +1,9 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`getAddress()`](#getAddress)            | Sets the Redstone Requester's address |
+| [`getAddress()`](#getAddress)            | Gets the Redstone Requester's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Redstone Requester's address |
-| [`getConfiguration()`](#getConfiguration)            | Gets the packager's configuration |
-| [`configure([{[name = string], [count = number]}...])`](#configure)            | Sets the packager's configuration |
+| [`getConfiguration()`](#getConfiguration)            | Gets the Redstone Requester's configuration |
+| [`configure([{[name = string], [count = number]}...])`](#configure)            | Sets the Redstone Requester's configuration |
 | [`request()`](#request)            | Requests a package for the network |
 
 ---
