@@ -1,10 +1,10 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [`getItemCount()`](#getItemCount) | Counts the number of items in the network |
-| [`list()`](#list)  | Lists all items in the storage |
-| [`listDetailed()`](#listDetailed)  | Lists all items in the storage with details (slower) |
-| [`requestFiltered(filter, [address])`](#requestFiltered)            | Requests a package for the network |
-| [`listPaymentInventory()`](#listPaymentInventory)  | Lists all items in the storage with details (slower) |
+| [`list()`](#list)  | Lists all items in the network |
+| [`listDetailed()`](#listDetailed)  | Lists all items in the network with details (slower) |
+| [`requestFiltered(filter, [address])`](#requestFiltered)            | Requests a package from the network |
+| [`listPaymentInventory()`](#listPaymentInventory)  | Lists all items kept by the Stock Ticker |
 
 ---
 

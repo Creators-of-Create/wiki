@@ -1,6 +1,6 @@
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [`getAddress()`](#getAddress)            | Sets the Postbox's address |
+| [`getAddress()`](#getAddress)            | Gets the Postbox's address |
 | [`setAddress([address])`](#setAddress)            | Sets the Postbox's address |
 
 ---
@@ -27,4 +27,3 @@ If the address arg is nil, it'll unset the address.
 - _address?:_ `string = nil`  Will receive packages addressed to `address`. Unsets if address is `nil`.
 
 
----
