@@ -7,7 +7,6 @@ import developers from "./sidebars/developers";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Create Wiki",
-  base: "/wiki/",
   description: "Building Tools and Aesthetic Technology",
 
   cleanUrls: true,
