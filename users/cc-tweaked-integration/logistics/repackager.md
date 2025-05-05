@@ -5,6 +5,7 @@
 | [`makePackage()`](#makePackage)            | Makes a package |
 | [`getPackageItems()`](#getPackageItems)            | Checks the contents of the currently held package |
 | [`getPackageAddress()`](#getPackageAddress)            | Checks the address of the currently held package |
+| [`setPackageAddress()`](#setPackageAddress)            | Sets the address of the currently held package |
 
 ---
 
@@ -51,3 +52,15 @@ Activates the Re-Packager as if it is powered by redstone. It operates by the sa
 
 **Returns**
 - `string` with the package's address or `nil` if there's no package.
+
+---
+
+### `setPackageAddress()` {#setPackageAddress}
+Sets the currently held package's address to the given variable.
+
+**Parameters**
+
+- _address?:_ `string = nil` Sets the held package's address to `address` if present, and clears the address if address is `nil`.
+
+**Returns**
+- `boolean` whether if a package's name was changed (false if no package present).
