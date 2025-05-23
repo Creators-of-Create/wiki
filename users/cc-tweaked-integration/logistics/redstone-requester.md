@@ -94,7 +94,7 @@ Sets the packagers configuration with up to 9 slots for autocrafting.
 **Usage**
 ```lua
 redstoneRequester = peripheral.find("Create_RedstoneRequester")
-redstoneRequester.configure(
+redstoneRequester.configureCraft(
     { name = "minecraft:diamond", count = nil }, -- defaults to 1
     -- "diamond", -- this would error
     { name = "minecraft:diamond", count = "yay" }, -- defaults to 1
