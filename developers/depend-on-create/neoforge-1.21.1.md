@@ -43,7 +43,9 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
 }
 ```
+:::
 
+And in your `gradle.properties` file:
 ```properties-vue [gradle.properties]
 minecraft_version = {{ $frontmatter.minecraft_version }}
 create_version = {{ $frontmatter.create_version }}
@@ -51,8 +53,6 @@ ponder_version = {{ $frontmatter.ponder_version }}
 flywheel_version = {{ $frontmatter.flywheel_version }}
 registrate_version = {{ $frontmatter.registrate_version }}
 ```
-
-:::
 
 ### Production Environment Dependency
 
