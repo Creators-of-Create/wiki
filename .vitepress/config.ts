@@ -3,6 +3,7 @@
 import { defineConfig } from "vitepress";
 import users from "./sidebars/users";
 import developers from "./sidebars/developers";
+import githubLinks from "./github-links";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,10 +25,10 @@ export default defineConfig({
     search: {
       provider: "algolia",
       options: {
-        appId: 'O356MVE57L',
-        apiKey: 'a15318635c598eb4366b704d06801027',
-        indexName: 'createmod'
-      }
+        appId: "O356MVE57L",
+        apiKey: "a15318635c598eb4366b704d06801027",
+        indexName: "createmod",
+      },
     },
 
     // https://vitepress.dev/reference/default-theme-config
@@ -53,8 +54,14 @@ export default defineConfig({
   },
 
   srcExclude: ["**/README.md"],
-  
+
   sitemap: {
-    hostname: "https://wiki.createmod.net"
-  }
+    hostname: "https://wiki.createmod.net",
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(githubLinks);
+    },
+  },
 });
