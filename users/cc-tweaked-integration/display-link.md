@@ -6,7 +6,7 @@
 | [`isColor()`](#isColor)               | Whether the connected display target supports color  |
 | [`isColour()`](#isColour)             | Whether the connected display target supports colour |
 | [`write(text)`](#write)               | Writes text at the current cursor position           |
-| [`writeBytes(bytes)`](#writeBytes)     | Writes bytes at the current cursor position          |
+| [`writeBytes(bytes)`](#writeBytes)    | Writes bytes at the current cursor position          |
 | [`clearLine()`](#clearLine)           | Clears the line at the current cursor position       |
 | [`clear()`](#clear)                   | Clears the whole display                             |
 | [`update()`](#update)                 | Pushes an update to the display target               |
