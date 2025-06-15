@@ -95,7 +95,7 @@ This will overwrite any text currently at the cursor position.
 
 **Parameters**
 
-- _args:_ `IArguments` The bytes to write.
+- _bytes:_ `number` The bytes to write.
 
 **See also**
 
