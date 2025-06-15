@@ -6,7 +6,7 @@
 | [`isColor()`](#isColor)               | Whether the connected display target supports color  |
 | [`isColour()`](#isColour)             | Whether the connected display target supports colour |
 | [`write(text)`](#write)               | Writes text at the current cursor position           |
-| [`writeBytes(args)`](#writeBytes)     | Writes bytes at the current cursor position          |
+| [`writeBytes(bytes)`](#writeBytes)     | Writes bytes at the current cursor position          |
 | [`clearLine()`](#clearLine)           | Clears the line at the current cursor position       |
 | [`clear()`](#clear)                   | Clears the whole display                             |
 | [`update()`](#update)                 | Pushes an update to the display target               |
@@ -80,12 +80,12 @@ This will overwrite any text currently at the cursor position.
 
 **See also**
 
-- [`writeBytes(args)`](#writeBytes) To write bytes to the display target.
+- [`writeBytes(bytes)`](#writeBytes) To write bytes to the display target.
 - [`update()`](#update) To push the changes to the display target.
 
 ---
 
-### `writeBytes(args)` {#writeBytes}
+### `writeBytes(bytes)` {#writeBytes}
 
 Writes bytes at the current cursor position, moving the cursor to the end of the text.
 This only writes to an internal buffer. For the changes to show up on the display [`update()`](#update) must be used.
@@ -135,4 +135,4 @@ using multiple [`write(text)`](#write) calls and then one [`update()`](#update) 
 **See also**
 
 - [`write(text)`](#write) To write text to the display target.
-- [`writeBytes(args)`](#writeBytes) To write bytes to the display target.
+- [`writeBytes(bytes)`](#writeBytes) To write bytes to the display target.
