@@ -15,7 +15,7 @@ prev: false
 ```groovy [build.gradle [FG]]
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://maven.tterrag.com" } // Registrate
+    maven { url = "https://maven.ithundxr.dev/mirror" } // Registrate
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
 }
 
@@ -33,7 +33,7 @@ dependencies {
 ```groovy [build.gradle [MDG]]
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://maven.tterrag.com" } // Registrate
+    maven { url = "https://maven.ithundxr.dev/mirror" } // Registrate
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
 }
 
@@ -51,7 +51,7 @@ dependencies {
 ```kotlin [build.gradle.kts [NG]]
 repositories {
     maven("https://maven.createmod.net") // Create, Ponder, Flywheel
-    maven("https://maven.tterrag.com") // Registrate
+    maven("https://maven.ithundxr.dev/mirror") // Registrate
 }
 
 dependencies {
@@ -68,7 +68,7 @@ dependencies {
 ```kotlin [build.gradle.kts [MDG]]
 repositories {
     maven("https://maven.createmod.net") // Create, Ponder, Flywheel
-    maven("https://maven.tterrag.com") // Registrate
+    maven("https://maven.ithundxr.dev/mirror") // Registrate
 }
 
 dependencies {
