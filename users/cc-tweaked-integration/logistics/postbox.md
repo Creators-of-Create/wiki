@@ -5,7 +5,7 @@
 | [`getItemDetail()`](#getItemDetail)            | Gets detailed information about an item in the PostBox's given slot |
 | [`list()`](#list)            | Lists all items in the PostBox's inventory |
 | [`setAddress(address)`](#setAddress)            | Sets the PostBox's address |
-| [`setConfiguration(configuration)`](#setConfiguration)            | Sets the FrogPort's configuration |
+| [`setConfiguration(configuration)`](#setConfiguration)            | Sets the PostBox's configuration |
 
 
 ---
