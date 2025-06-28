@@ -67,6 +67,14 @@ export default {
                 {
                   text: "Postbox",
                   link: "/users/cc-tweaked-integration/logistics/postbox",
+                },
+                {
+                  text: "Package Object",
+                  link: "/users/cc-tweaked-integration/logistics/package-object",
+                },
+                {
+                  text: "Order Data Object",
+                  link: "/users/cc-tweaked-integration/logistics/order-data-object",
                 }
               ],
             },
