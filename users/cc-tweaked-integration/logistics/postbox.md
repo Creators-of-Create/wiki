@@ -35,7 +35,7 @@ Gets the PostBox's configuration.
 
 Get detailed information about an item in the PostBox's inventory.
 
-The returned information contains the same information as each item in [`list`](#list), as well as additional details like the display name (`displayName`), and item and item durability (`damage`, `maxDamage`, `durability`).
+The returned information contains the same information as each item in [`list`](#list), as well as additional details like the display name (`displayName`), and item durability (`damage`, `maxDamage`, `durability`).
 
 Some items include more information (such as enchantments) - it is recommended to print it out using [`textutils.serialize`](https://tweaked.cc/module/textutils.html#v:serialize) or in the Lua REPL, to explore what is available.
 

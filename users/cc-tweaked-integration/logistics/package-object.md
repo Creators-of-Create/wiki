@@ -1,18 +1,18 @@
 | Method                                 | Description                        |
 | -------------------------------------- | ---------------------------------- |
 | [`getAddress()`](#getAddress)            | Gets the package's address |
-| [`getItemDetail(slot)`](#getItemDetail) | Gets detailed information about an item inside the package |
-| [`getOrderData()`](#getOrderData) | Gets the [`orderData`](./order-data-object.md) object of the package |
+| [`getItemDetail(slot)`](#getItemDetail) | Gets detailed information about an item in the package |
+| [`getOrderData()`](#getOrderData) | Gets the [`orderData`](./order-data-object.md) object associated with the package |
 | [`isEditable()`](#isEditable)  | Checks if the package is editable |
 | [`list()`](#list)  | Lists all items in the package |
-| [`setAddress(address)`](#setAddress)            | Sets the Packager's address |
+| [`setAddress(address)`](#setAddress)            | Sets the package's address |
 ::: tip Mutability
 
 Package Objects are snapshots of the package in the moment.
 
 You can get your packageObject by either using `.getItemDetail` on a package (it'll expose a `package` field, which is this object), or by using a packager/re-packager's [`getPackage`](./packager.md#getPackage).
 
-If by any means the package has it's data changed, be it by an addon or by another computer using the [`setAddress`](#setAddress) function, the snapshot will not be notified, and it'll be outdated.
+If by any means the package has its data changed, be it by an addon or by another computer using the [`setAddress`](#setAddress) function, the snapshot will not be notified, and it'll be outdated.
 
 When a package is held within a packager/re-packager, if you call it using [`getPackage`](./packager.md#getPackage), it's `isEditable` function should return true until it leaves the (re)packager. In this state you change it's address with `setAddress` on the fly.
 
@@ -22,7 +22,7 @@ When a package is held within a packager/re-packager, if you call it using [`get
 
 ### `getAddress()` {#getAddress}
 
-Gets the Package's address.
+Gets the package's address.
 
 If the package [`isEditable`](#isEditable), then it'll also update the snapshot's address, in case it has changed.
 
@@ -36,17 +36,17 @@ If the package [`isEditable`](#isEditable), then it'll also update the snapshot'
 
 Get detailed information about an item in the package.
 
-The returned information contains the same information as each item in [`list`](#list), as well as additional details like the display name (`displayName`), and item and item durability (`damage`, `maxDamage`, `durability`).
+The returned information contains the same information as each item in [`list`](#list), as well as additional details like the display name (`displayName`), and item durability (`damage`, `maxDamage`, `durability`).
 
 Some items include more information (such as enchantments) - it is recommended to print it out using [`textutils.serialize`](https://tweaked.cc/module/textutils.html#v:serialize) or in the Lua REPL, to explore what is available.
 
 **Parameters**
 
-- _slot:_ `number` The slot to get information about.
+- _slot_: `number` The slot to get information about.
 
 **Throws**
 
-- If the slot is not between 1-9 .
+- If the slot is not between 1 and 9.
 
 **Returns**
 
@@ -66,7 +66,7 @@ Some items include more information (such as enchantments) - it is recommended t
 
 ### `getOrderData()` {#getOrderData}
 
-Gets the [`orderData`](./order-data-object.md) object of the package.
+Gets the [`orderData`](./order-data-object.md) object of the package if it's an encoded package.
 
 **Returns**
 - [`orderData`](./order-data-object.md) of the package, or `nil` if none is present, like:
@@ -91,7 +91,7 @@ Tells you if the package is sitting inside a packager/repackager you called this
 
 otherwise returns `false`.
 
-Returns
+**Returns**
 - `boolean` that's `true` if the package is editable, `false` otherwise.
 
 ---
@@ -129,7 +129,7 @@ The returned table is never sparse, so you can iterate over it with [`ipairs`](h
 
 ### `setAddress(address)` {#setAddress}
 
-Sets the Package's address to the given variable if it [`isEditable`](#isEditable) (so, inside the packager/repackager it was called from using specifically [`getPackage`](./packager.md#getPackage))
+Sets the package's address to the given value if it [`isEditable`](#isEditable) (so, inside the packager/repackager it was called from using specifically [`getPackage`](./packager.md#getPackage))
 
 This also updates the package object's `getAddress` to the return the new `address`.
 
