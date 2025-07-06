@@ -1,7 +1,7 @@
 ---
 minecraft_version: 1.21.1
 create_version: 6.0.6-98
-ponder_version: 1.0.56
+ponder_version: 1.0.59
 flywheel_version: 1.0.4
 registrate_version: MC1.21-1.3.0+62
 
@@ -15,8 +15,7 @@ next: false
 ```groovy [build.gradle]
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://mvn.devos.one/snapshots" } // Registrate
-    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+    maven { url = "https://maven.ithundxr.dev/snapshots" } // Registrate
 }
 
 dependencies {
@@ -31,8 +30,7 @@ dependencies {
 ```kotlin [build.gradle.kts]
 repositories {
     maven("https://maven.createmod.net") // Create, Ponder, Flywheel
-    maven("https://mvn.devos.one/snapshots") // Registrate
-    maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/") // ForgeConfigAPIPort
+    maven("https://maven.ithundxr.dev/snapshots") // Registrate
 }
 
 dependencies {

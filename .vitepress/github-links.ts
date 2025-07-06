@@ -1,6 +1,8 @@
+import MarkdownIt = require("markdown-it");
+
 const REGEX = /#(\d+)/g;
 
-export default function (md) {
+export default function (md: MarkdownIt) {
   md.core.ruler.after("linkify", "github-links", (state) => {
     for (const token of state.tokens) {
       if (token.type === "inline" && Array.isArray(token.children)) {
