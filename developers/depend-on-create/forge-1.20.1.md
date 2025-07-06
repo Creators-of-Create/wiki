@@ -15,7 +15,7 @@ prev: false
 ```groovy [build.gradle [FG]]
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://maven.tterrag.com" } // Registrate
+    maven { url = "https://maven.ithundxr.dev/mirror" } // Registrate
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
 }
 
@@ -33,7 +33,7 @@ dependencies {
 ```groovy [build.gradle [MDG]]
 repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://maven.tterrag.com" } // Registrate
+    maven { url = "https://maven.ithundxr.dev/mirror" } // Registrate
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
 }
 
@@ -51,7 +51,7 @@ dependencies {
 ```kotlin [build.gradle.kts [NG]]
 repositories {
     maven("https://maven.createmod.net") // Create, Ponder, Flywheel
-    maven("https://maven.tterrag.com") // Registrate
+    maven("https://maven.ithundxr.dev/mirror") // Registrate
 }
 
 dependencies {
@@ -68,7 +68,7 @@ dependencies {
 ```kotlin [build.gradle.kts [MDG]]
 repositories {
     maven("https://maven.createmod.net") // Create, Ponder, Flywheel
-    maven("https://maven.tterrag.com") // Registrate
+    maven("https://maven.ithundxr.dev/mirror") // Registrate
 }
 
 dependencies {
@@ -82,15 +82,16 @@ dependencies {
 }
 ```
 
-```properties-vue [gradle.properties]
+:::
+
+And in your `gradle.properties` file:
+```properties-vue
 minecraft_version = {{ $frontmatter.minecraft_version }}
 create_version = {{ $frontmatter.create_version }}
 ponder_version = {{ $frontmatter.ponder_version }}
 flywheel_version = {{ $frontmatter.flywheel_version }}
 registrate_version = {{ $frontmatter.registrate_version }}
 ```
-
-:::
 
 #### Mixin Refmap Remapping [FG]
 
