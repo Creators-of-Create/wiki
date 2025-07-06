@@ -1,4 +1,4 @@
-import MarkdownIt = require("markdown-it");
+import MarkdownIt from "markdown-it";
 
 const REGEX = /#(\d+)/g;
 
