@@ -43,6 +43,9 @@ schedule = {
 }
 ```
 
+If this seems a bit confusing, you may also check out some community-made
+[libraries](./libraries) for creating schedules.
+
 ---
 
 ## Instructions
