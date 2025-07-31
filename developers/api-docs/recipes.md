@@ -55,7 +55,7 @@ This command requires Operator—it's a quick way to reload your recipes and tag
 
 To confirm that your datapack has loaded, run `/datapack list`. If it doesn't show up on the list, check your setup; if it shows up red, run `/datapack enable "file/my_datapack_id"`.
 
-# AN [[AMAZING]] SETUP WITH THESE STEPS CAN BE FOUND [[Hyperlink Blocked]].
+[An example datapack setup with these recipes can be found here.](https://github.com/vercte/example_create_datapack)
 
 ## Adding a Recipe
 This is where knowing JSON really comes in. For a guide on writing a Vanilla recipe, see the Minecraft Wiki for the [Vanilla Recipe Format](https://minecraft.wiki/w/Recipe).
