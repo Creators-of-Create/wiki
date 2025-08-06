@@ -1,6 +1,6 @@
 ---
 title: Custom Recipes
-description: How to write recipes for Create using datapacks, external mods, and through Recipe Datagen.
+description: How to write recipes for Create using datapacks and KubeJS.
 
 next: false
 ---
