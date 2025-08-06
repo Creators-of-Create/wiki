@@ -11,7 +11,7 @@ hero:
 
 features:
   - title: For Users
-    details: From common issues to the development status of Create, All the info you need can be found here!
+    details: From basic concepts and blocks, to common issues and the development status of Create, All the info you need can be found here!
     link: ./users
     linkText: Read More
   - title: For Translators

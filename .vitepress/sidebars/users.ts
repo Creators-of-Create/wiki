@@ -6,6 +6,7 @@ export default {
       text: "For Users",
       link: "/users",
       items: [
+        { text: "Getting started", link: "/users/getting-started" },
         // TODO - Finish this
         // { text: "Common Issues", link: "/users/common-issues" },
         {
