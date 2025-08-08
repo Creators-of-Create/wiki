@@ -13,11 +13,14 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
-  head: [["link", { rel: "icon", href: "/create-icon-small.webp" }]],
+  srcDir: "src",
+  srcExclude: ["**/README.md"],
+
+  head: [["link", { rel: "icon", href: "/assets/create-icon-small.webp" }]],
 
   themeConfig: {
     logo: {
-      src: "/create-icon-small.webp",
+      src: "/assets/create-icon-small.webp",
       width: 24,
       height: 24,
     },
@@ -32,7 +35,7 @@ export default defineConfig({
     },
 
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
+    // nav: [{ text: "Home", link: "/" }],
 
     sidebar: {
       ...users,
@@ -52,8 +55,6 @@ export default defineConfig({
       text: "Edit this page on GitHub",
     },
   },
-
-  srcExclude: ["**/README.md"],
 
   sitemap: {
     hostname: "https://wiki.createmod.net",

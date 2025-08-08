@@ -6,7 +6,7 @@ hero:
   name: Create Wiki
   tagline: Building Tools and Aesthetic Technology
   image:
-    src: /create-icon-large.webp
+    src: /assets/create-icon-large.webp
     alt: Create Mod Icon
 
 features:
