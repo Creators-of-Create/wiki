@@ -592,6 +592,10 @@ export default {
                   text: "Stressometer",
                   link: "/users/cc-tweaked-integration/stressometer",
                 },
+                {
+                  text: "Libraries",
+                  link: "/users/cc-tweaked-integration/train/libraries",
+                },
               ],
             },
             //  Other integrations here
