@@ -3,7 +3,8 @@
 import { defineConfig } from "vitepress";
 import users from "./sidebars/users";
 import developers from "./sidebars/developers";
-import githubLinks from "./github-links";
+import githubLinks from "./githubLinks";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -64,5 +65,9 @@ export default defineConfig({
     config: (md) => {
       md.use(githubLinks);
     },
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

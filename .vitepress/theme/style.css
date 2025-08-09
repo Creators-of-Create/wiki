@@ -43,6 +43,18 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+@import "tailwindcss";
+
+/* Custom tailwind overrides */
+.border,
+.border-b,
+.border-t,
+.border-l,
+.border-r {
+    border-color: var(--vp-c-divider);
+}
+
+/* Vitepress css */
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
