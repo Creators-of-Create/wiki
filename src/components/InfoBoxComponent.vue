@@ -44,7 +44,7 @@ const infoBarLabels: InfoBarLabel[] = [
 </script>
 
 <template>
-  <aside class="bg-[var(--vp-c-bg-alt)] border w-full rounded-lg p-3 mb-6">
+  <aside class="bg-[var(--vp-c-bg-alt)] border w-full rounded-lg p-3 mb-4">
     <h1 class="text-center !text-2xl !font-bold pb-3 pl-3 pr-3 pt-1">
       {{ title }}
     </h1>

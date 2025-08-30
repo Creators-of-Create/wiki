@@ -11,6 +11,8 @@ export default defineConfig({
   title: "Create Wiki",
   description: "Building Tools and Aesthetic Technology",
 
+  appearance: "dark",
+
   cleanUrls: true,
   lastUpdated: true,
 
