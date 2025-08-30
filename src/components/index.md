@@ -1,4 +1,4 @@
-# Testing grounds
+# Component showcase
 
 ## Infobox
 
