@@ -7,11 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@types/markdown-it':
         specifier: ~14.1.2
         version: 14.1.2
-    devDependencies:
       '@types/node':
         specifier: ~24.3.0
         version: 24.3.0
