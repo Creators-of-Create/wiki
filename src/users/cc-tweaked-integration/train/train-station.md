@@ -3,7 +3,7 @@ prev: false
 ---
 
 | Method                                              | Description                                        |
-|-----------------------------------------------------|----------------------------------------------------|
+| --------------------------------------------------- | -------------------------------------------------- |
 | [`assemble()`](#assemble)                           | Assembles a new train at the station               |
 | [`disassemble()`](#disassemble)                     | Disassembles the currently present train           |
 | [`setAssemblyMode(assemblyMode)`](#setAssemblyMode) | Sets the station's assembly mode                   |

@@ -85,6 +85,7 @@ dependencies {
 :::
 
 And in your `gradle.properties` file:
+
 ```properties-vue
 minecraft_version = {{ $frontmatter.minecraft_version }}
 create_version = {{ $frontmatter.create_version }}

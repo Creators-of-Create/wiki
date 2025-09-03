@@ -49,7 +49,6 @@ next block to place is not available.
 During the process, the status text in the interface will show the progress and potential issues:
 
 - **Stopped** - Red Indicator; No Schematic is in the process of being built.
-
   - **"Idle"** - Initial state of the cannon. Press **Play** to start the build.
   - **"Invalid Blueprint"** - You inserted a Schematic with no data. Better get rid of that item.
   - **"Schematic Expired"** - The Schematic file was lost on the server. This could be due to two different reasons:
@@ -57,7 +56,6 @@ During the process, the status text in the interface will show the progress and 
     - You uploaded at least 10 other Schematics after this one, causing it to be overwritten.
 
 - **Paused** - Yellow Indicator, Schematic is present but not being worked on.
-
   - **"Ready"** - Paused step before printing. You can re-assure that materials are present and the settings are as
     desired.
   - **"Out of Gunpowder"** - Speaks for itself, doesn't it? Press **Play** after refueling to unpause.
@@ -82,7 +80,6 @@ Hold **Shift** to get in-game descriptions of the options.
   These options indicate at what conditions the **Schematicannon** replaces a given block in the World.  
   The four buttons correspond to levels of leniency and usually imply the conditions to their left. (Except _Don't
   replace_)
-
   1. **Don't Replace Solid Blocks** - Lowest level of leniency. The cannon will simply skip a position if there is a
      solid Block in the world already. This will mask the schematic into the world, not placing anything below and
      into the surface.
@@ -100,7 +97,6 @@ Hold **Shift** to get in-game descriptions of the options.
   inventories.  
   Instead, it will continue at the next position, leaving parts of the structure unfinished.  
   This can have a couple advantages:
-
   - **Filtering** - If you would like to leave out certain blocks of a structure, don't include the Materials near the
     cannon and enable the _Skip Missing Blocks_ option. Make sure none of the desired materials is missing.
   - **Splitting the Workload** - If you want multiple cannons working on a large Schematic, enable skip missing blocks

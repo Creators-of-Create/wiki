@@ -41,9 +41,11 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
 }
 ```
+
 :::
 
 And in your `gradle.properties` file:
+
 ```properties-vue [gradle.properties]
 minecraft_version = {{ $frontmatter.minecraft_version }}
 create_version = {{ $frontmatter.create_version }}

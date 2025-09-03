@@ -8,7 +8,7 @@ last thing we want is to give up on making features perfect for you just so it c
 ## Supported Game Versions {#supported-versions}
 
 | Overview        |                   |
-|-----------------|-------------------|
+| --------------- | ----------------- |
 | 1.21.2+         | Unsupported       |
 | 1.21.1          | Continued Support |
 | 1.20.2 - 1.21.0 | Skipped           |

@@ -3,7 +3,7 @@ next: false
 ---
 
 | Method                                      | Description                    |
-|---------------------------------------------|--------------------------------|
+| ------------------------------------------- | ------------------------------ |
 | [`getStress()`](#getStress)                 | Gets the current stress level  |
 | [`getStressCapacity()`](#getStressCapacity) | Gets the total stress capacity |
 
