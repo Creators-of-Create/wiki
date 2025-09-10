@@ -25,7 +25,6 @@ export default function (md: MarkdownIt) {
                 matchedOrg2,
                 matchedNum2,
               ] = match;
-              console.log(match);
               const index = match.index;
 
               if (index > last) {
