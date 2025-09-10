@@ -1,6 +1,9 @@
 import MarkdownIt from "markdown-it";
 
-const REGEX = /#(\d+)/g;
+const DEFAULT_ORG = "Creators-of-Create";
+const DEFAULT_REPO = "Create";
+const REGEX =
+  /([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)#(\d+)|([A-Za-z0-9_.-]+)?#(\d+)/g;
 
 export default function (md: MarkdownIt) {
   md.core.ruler.after("linkify", "github-links", (state) => {
@@ -14,7 +17,15 @@ export default function (md: MarkdownIt) {
             const text = child.content;
 
             for (const match of text.matchAll(REGEX)) {
-              const [full, number] = match;
+              const [
+                fullMatch,
+                matchedOrg1,
+                matchedRepo1,
+                matchedNum1,
+                matchedOrg2,
+                matchedNum2,
+              ] = match;
+              console.log(match);
               const index = match.index;
 
               if (index > last) {
@@ -25,13 +36,17 @@ export default function (md: MarkdownIt) {
                 });
               }
 
+              const org = matchedOrg1 ?? matchedOrg2 ?? DEFAULT_ORG;
+              const repo = matchedRepo1 ?? DEFAULT_REPO;
+              const number = matchedNum1 ?? matchedNum2;
+
               newChildren.push({
                 type: "html_inline",
-                content: `<a href="https://github.com/Creators-of-Create/Create/issues/${number}">#${number}</a>`,
+                content: `<a href="https://github.com/${org}/${repo}/issues/${number}">${fullMatch}</a>`,
                 level: child.level,
               });
 
-              last = index + full.length;
+              last = index + fullMatch.length;
             }
 
             if (last < text.length) {
