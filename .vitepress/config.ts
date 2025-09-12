@@ -61,6 +61,7 @@ export default defineConfig({
   },
 
   markdown: {
+    math: true
     config: (md) => {
       md.use(githubLinks);
     },
