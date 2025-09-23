@@ -1,3 +1,7 @@
+---
+prev: false
+---
+
 | Method                                 | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [`getAddress()`](#getAddress)            | Gets the Packager's address |
@@ -39,7 +43,7 @@ Some items include more information (such as enchantments) - it is recommended t
 
 **Returns**
 
-- `table` Information about the item in this slot, or `nil` if it is empty, like:
+- `table?` Information about the item in this slot, or `nil` if it is empty, like:
 ```lua
 {
   name = "minecraft:apple",

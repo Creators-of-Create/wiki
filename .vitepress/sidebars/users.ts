@@ -34,7 +34,7 @@ export default {
         //   ],
         // },
         {
-          text: "Create's Computercraft Integration",
+          text: "Create's Computercraft Integration", 
           collapsed: true,
           items: [
             {
@@ -82,26 +82,46 @@ export default {
               text: "Trains",
               items: [
                 {
-                  text: "Train station",
+                  text: "Train Station",
                   link: "/users/cc-tweaked-integration/train/train-station",
                 },
                 {
-                  text: "Train schedule",
+                  text: "Train Signal",
+                  link: "/users/cc-tweaked-integration/train/train-signal",
+                },
+                {
+                  text: "Train Observer",
+                  link: "/users/cc-tweaked-integration/train/train-observer",
+                },
+                {
+                  text: "Train Schedule",
                   link: "/users/cc-tweaked-integration/train/train-schedule",
                 },
               ],
+            },
+            {
+              text: "Nixie Tube",
+              link: "/users/cc-tweaked-integration/nixie-tube",
             },
             {
               text: "Display Link",
               link: "/users/cc-tweaked-integration/display-link",
             },
             {
-              text: "Rotational Speed Controller",
-              link: "/users/cc-tweaked-integration/rotational-speed-controller",
+              text: "Sticker",
+              link: "/users/cc-tweaked-integration/sticker",
             },
             {
               text: "Sequenced Gearshift",
               link: "/users/cc-tweaked-integration/sequenced-gearshift",
+            },
+			{
+              text: "Rotational Speed Controller",
+              link: "/users/cc-tweaked-integration/rotational-speed-controller",
+            },
+            {
+              text: "Creative Motor",
+              link: "/users/cc-tweaked-integration/creative-motor",
             },
             {
               text: "Speedometer",
