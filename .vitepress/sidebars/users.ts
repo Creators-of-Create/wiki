@@ -97,6 +97,10 @@ export default {
                   text: "Train Schedule",
                   link: "/users/cc-tweaked-integration/train/train-schedule",
                 },
+                {
+                  text: "Libraries",
+                  link: "/users/cc-tweaked-integration/train/libraries",
+                },
               ],
             },
             {

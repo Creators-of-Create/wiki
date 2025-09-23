@@ -3,6 +3,7 @@
 import { defineConfig } from "vitepress";
 import users from "./sidebars/users";
 import developers from "./sidebars/developers";
+import githubLinks from "./github-links";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,22 +13,29 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
-  head: [["link", { rel: "icon", href: "/create-icon-small.webp" }]],
+  srcDir: "src",
+  srcExclude: ["**/README.md"],
+
+  head: [["link", { rel: "icon", href: "/assets/create-icon-small.webp" }]],
 
   themeConfig: {
     logo: {
-      src: "/create-icon-small.webp",
+      src: "/assets/create-icon-small.webp",
       width: 24,
       height: 24,
     },
 
     search: {
-      // TODO - Switch to Algolia Search post deployment
-      provider: "local",
+      provider: "algolia",
+      options: {
+        appId: "O356MVE57L",
+        apiKey: "a15318635c598eb4366b704d06801027",
+        indexName: "createmod",
+      },
     },
 
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
+    // nav: [{ text: "Home", link: "/" }],
 
     sidebar: {
       ...users,
@@ -43,10 +51,18 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: "https://github.com/Creators-of-Create/wiki/edit/main/:path",
+      pattern: "https://github.com/Creators-of-Create/wiki/edit/main/src/:path",
       text: "Edit this page on GitHub",
     },
   },
 
-  srcExclude: ["**/README.md"],
+  sitemap: {
+    hostname: "https://wiki.createmod.net",
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(githubLinks);
+    },
+  },
 });
