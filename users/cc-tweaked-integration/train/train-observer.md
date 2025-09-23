@@ -20,7 +20,7 @@ Checks if a train is currently within the train observer's range.
 - `boolean` The state of the observer. `true` means it's outputting redstone signal.
 
 
-### `isForcedRed()` {#isForcedRed}
+### `getPassingTrainName()` {#getPassingTrainName}
 
 Gets the name of a train within the train observer's range.
 

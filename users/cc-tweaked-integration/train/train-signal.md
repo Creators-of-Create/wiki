@@ -52,7 +52,7 @@ Gets the train signal's signal type (Normally toggled witha  wrench) as how the 
 Cycles through the train signal's signal types like if you used a wrench on it.
 
 
-| [`listBlockingTrainNames()`](#listBlockingTrainNames) | Lists trains triggering the signal |
+### `listBlockingTrainNames()`{#listBlockingTrainNames}
 
 Retrurns
 - `table` List of train name `string`s occupying the track.
