@@ -7,6 +7,11 @@
 | [`makePackage()`](#makePackage)            | Makes a package |
 | [`setAddress([address])`](#setAddress)            | Sets the Re-Packager's address |
 
+| Event                                               | Description                               |
+|-----------------------------------------------------|-------------------------------------------|
+| [`package_created`](#package_repackaged)            | Triggers whenever packages are repackaged |
+| [`package_received`](#package_received)             | Triggers when a package is received       |
+
 ---
 
 
@@ -122,3 +127,29 @@ Repackagers only force-assign their address to non-encoded packages (the ones th
 **Parameters**
 
 - _address?:_ `string = nil` Force every package to be addressed to `address`. Goes back to default if address is `nil`.
+
+---
+
+::: tip Events
+The following are events that can be accessed with [`os.pullEvent(filter)`](https://tweaked.cc/module/os.html#v:pullEvent).
+:::
+
+
+### Event: `package_repackaged` {#package_repackaged}
+
+Triggers when the packager creates a package.
+
+**Returns**
+
+- `table` Example [Package Object](./package-object.md) of all the packages created in the batch.
+- `number` Number of resulting identical packages.
+
+---
+
+### Event: `package_received` {#package_received}
+
+Triggers when the packager recieves (and deposits) a package into it's connected inventory.
+
+**Returns**
+
+- `table` [Package Object](./package-object.md) of the received package.

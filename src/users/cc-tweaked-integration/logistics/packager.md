@@ -11,6 +11,11 @@ prev: false
 | [`makePackage()`](#makePackage)            | Makes a package |
 | [`setAddress([address])`](#setAddress)            | Sets the Packager's address |
 
+| Event                                               | Description                         |
+|-----------------------------------------------------|-------------------------------------|
+| [`package_created`](#package_created)               | Triggers when a package is created  |
+| [`package_received`](#package_received)             | Triggers when a package is received |
+
 ---
 
 
@@ -98,7 +103,6 @@ The returned table is sparse, so empty slots will be `nil` - it is recommended t
 }
 ```
 
-
 ---
 
 ### `makePackage()` {#makePackage}
@@ -122,3 +126,28 @@ If the address arg is `nil`, it'll go back to the default sign-based behavior ag
 **Parameters**
 
 - _address?:_ `string = nil` Force every package to be addressed to `address`. Goes back to default if address is `nil`.
+
+---
+
+::: tip Events
+The following are events that can be accessed with [`os.pullEvent(filter)`](https://tweaked.cc/module/os.html#v:pullEvent).
+:::
+
+
+### Event: `package_created` {#package_created}
+
+Triggers when the packager creates a package.
+
+**Returns**
+
+- `table` [Package Object](./package-object.md) of the created package. It [`isEditable()`](./package-object.md#isEditable) for as long as it remains inside the packager.
+
+---
+
+### Event: `package_received` {#package_received}
+
+Triggers when the packager recieves (and deposits) a package into it's connected inventory.
+
+**Returns**
+
+- `table` [Package Object](./package-object.md) of the received package.

@@ -10,11 +10,11 @@
 
 Package Objects are snapshots of the package in the moment.
 
-You can get your packageObject by either using `.getItemDetail` on a package (it'll expose a `package` field, which is this object), or by using a packager/re-packager's [`getPackage`](./packager.md#getPackage).
+You can get your packageObject by either using `.getItemDetail()` on a package (it'll expose a `package` field, which is this object), or by using a packager/re-packager's [`getPackage()`](./packager.md#getPackage).
 
-If by any means the package has its data changed, be it by an addon or by another computer using the [`setAddress`](#setAddress) function, the snapshot will not be notified, and it'll be outdated.
+If by any means the package has its data changed, be it by an addon or by another computer using the [`setAddress()`](#setAddress) function, the snapshot will not be notified, and it'll be outdated.
 
-When a package is held within a packager/re-packager, if you call it using [`getPackage`](./packager.md#getPackage), it's `isEditable` function should return true until it leaves the (re)packager. In this state you change it's address with `setAddress` on the fly.
+When a package is held within a packager/re-packager, if you call it using [`getPackage()`](./packager.md#getPackage) or pull it with [`package_created`](./packager.md#package_created), it's `isEditable` function should return true until it leaves the (re)packager. You can change it's address with `setAddress()` while it remains there.
 
 :::
 
@@ -24,7 +24,7 @@ When a package is held within a packager/re-packager, if you call it using [`get
 
 Gets the package's address.
 
-If the package [`isEditable`](#isEditable), then it'll also update the snapshot's address, in case it has changed.
+If the package [`isEditable()`](#isEditable), then it'll also update the snapshot's address, in case it has changed.
 
 **Returns**
 
@@ -36,9 +36,9 @@ If the package [`isEditable`](#isEditable), then it'll also update the snapshot'
 
 Get detailed information about an item in the package.
 
-The returned information contains the same information as each item in [`list`](#list), as well as additional details like the display name (`displayName`), and item durability (`damage`, `maxDamage`, `durability`).
+The returned information contains the same information as each item in [`list()`](#list), as well as additional details like the display name (`displayName`), and item durability (`damage`, `maxDamage`, `durability`).
 
-Some items include more information (such as enchantments) - it is recommended to print it out using [`textutils.serialize`](https://tweaked.cc/module/textutils.html#v:serialize) or in the Lua REPL, to explore what is available.
+Some items include more information (such as enchantments) - it is recommended to print it out using [`textutils.serialize()`](https://tweaked.cc/module/textutils.html#v:serialize) or in the Lua REPL, to explore what is available.
 
 **Parameters**
 
@@ -87,9 +87,9 @@ Gets the [`orderData`](./order-data-object.md) object of the package if it's an 
 
 ### `isEditable()` {#isEditable}
 
-Tells you if the package is sitting inside a packager/repackager you called this object from, if you called it via [`getPackage`](./repackager.md#getPackage).
+Tells you if the package is sitting inside a packager/repackager you called this object from.
 
-otherwise returns `false`.
+Best way to achieve this is to either call it via [`getPackage()`](./packager.md#getPackage), or call it from the [`package_created`](./packager.md#package_created) event.
 
 **Returns**
 - `boolean` that's `true` if the package is editable, `false` otherwise.
@@ -100,9 +100,9 @@ otherwise returns `false`.
 
 List all items inside the package. This returns a table, with an entry for each slot.
 
-Each item in the inventory is represented by a table containing some basic information. More information can be fetched with [`getItemDetail`](#getItemDetail). The table contains the item `name`, the `count` and a (potentially `nil`) hash of the item's `nbt`. This NBT data doesn't contain anything useful, but allows you to distinguish identical items.
+Each item in the inventory is represented by a table containing some basic information. More information can be fetched with [`getItemDetail()`](#getItemDetail). The table contains the item `name`, the `count` and a (potentially `nil`) hash of the item's `nbt`. This NBT data doesn't contain anything useful, but allows you to distinguish identical items.
 
-The returned table is never sparse, so you can iterate over it with [`ipairs`](https://www.lua.org/manual/5.1/manual.html#pdf-ipairs) just fine.
+The returned table is never sparse, so you can iterate over it with [`ipairs()`](https://www.lua.org/manual/5.1/manual.html#pdf-ipairs) just fine.
 
 **Returns**
 
@@ -129,9 +129,9 @@ The returned table is never sparse, so you can iterate over it with [`ipairs`](h
 
 ### `setAddress(address)` {#setAddress}
 
-Sets the package's address to the given value if it [`isEditable`](#isEditable) (so, inside the packager/repackager it was called from using specifically [`getPackage`](./packager.md#getPackage))
+Sets the package's address to the given value if it [`isEditable()`](#isEditable).
 
-This also updates the package object's `getAddress` to the return the new `address`.
+This also updates the package object's [`getAddress()`](#getAddress) to return the new `address`.
 
 **Parameters**
 
@@ -139,4 +139,4 @@ This also updates the package object's `getAddress` to the return the new `addre
 
 **Throws**
 
-- If [`isEditable`](#isEditable) is `false`.
+- If [`isEditable()`](#isEditable) is `false`.

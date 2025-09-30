@@ -7,6 +7,10 @@
 | [`setAddress(address)`](#setAddress)            | Sets the PostBox's address |
 | [`setConfiguration(configuration)`](#setConfiguration)            | Sets the PostBox's configuration |
 
+| Event                                               | Description                         |
+|-----------------------------------------------------|-------------------------------------|
+| [`package_sent`](#package_sent)                     | Triggers when a package is sent     |
+| [`package_received`](#package_received)             | Triggers when a package is received |
 
 ---
 
@@ -124,3 +128,27 @@ Sets the PostBox's configuration to either `"send_recieve"` or `"send"`, represe
 
 - _address:_ `string` The desired configuration, either `"send_recieve"` or `"send"`.
 
+---
+
+::: tip Events
+The following are events that can be accessed with [`os.pullEvent(filter)`](https://tweaked.cc/module/os.html#v:pullEvent).
+:::
+
+
+### Event: `package_sent` {#package_sent}
+
+Triggers when a package is deposited onto a train.
+
+**Returns**
+
+- `table` [Package Object](./package-object.md) of the sent package.
+
+---
+
+### Event: `package_received` {#package_received}
+
+Triggers when a package is extracted from a train.
+
+**Returns**
+
+- `table` [Package Object](./package-object.md) of the received package.
