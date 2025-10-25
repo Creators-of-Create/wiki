@@ -1,6 +1,3 @@
----
-prev: false
----
 
 | Method                                              | Description                                        |
 | --------------------------------------------------- | -------------------------------------------------- |
@@ -9,7 +6,7 @@ prev: false
 | [`setAssemblyMode(assemblyMode)`](#setAssemblyMode) | Sets the station's assembly mode                   |
 | [`isInAssemblyMode()`](#isInAssemblyMode)           | Whether the station is in assembly mode            |
 | [`getStationName()`](#getStationName)               | Gets the station's current name                    |
-| [`setStationName(name)`](#setStationNamename)       | Sets the station's name                            |
+| [`setStationName(name)`](#setStationName)           | Sets the station's name                            |
 | [`isTrainPresent()`](#isTrainPresent)               | Whether a train is present at the station          |
 | [`isTrainImminent()`](#isTrainImminent)             | Whether a train is imminent to the station         |
 | [`isTrainEnroute()`](#isTrainEnroute)               | Whether a train is enroute to the station          |
@@ -18,12 +15,22 @@ prev: false
 | [`hasSchedule()`](#hasSchedule)                     | Whether the currently present train has a schedule |
 | [`getSchedule()`](#getSchedule)                     | Gets the currently present train's schedule        |
 | [`setSchedule(schedule)`](#setSchedule)             | Sets the currently present train's schedule        |
+| [`canTrainReach(destination)`](#canTrainReach)      | Checks if a route to a given station is possible   |
+| [`distanceTo(destination)`](#distanceTo)            | Measures the distance to a given station           |
+
+
+| Event                                               | Description                                        |
+|-----------------------------------------------------|----------------------------------------------------|
+| [`train_imminent`](#train_imminent)                 | Triggers when a train is imminent                  |
+| [`train_arrival`](#train_arrival)                   | Triggers when a train arrives to station           |
+| [`train_departure`](#train_departure)               | Triggers when a train departs from station         |
 
 ---
 
-### `assemble()`
+### `assemble()` {#assemble}
 
 Assembles a new train at the station. The station must be in assembly mode before calling this function.
+
 This function also causes the station to exit assembly mode after the train is done assembling.
 
 **Throws**
@@ -39,7 +46,7 @@ This function also causes the station to exit assembly mode after the train is d
 
 ---
 
-### `disassemble()`
+### `disassemble()`{#disassemble}
 
 Disassembles the station's currently present train. The station must not be in assembly mode.
 
@@ -71,7 +78,7 @@ Sets the station's assembly mode.
 
 ---
 
-### `isInAssemblyMode()`
+### `isInAssemblyMode()`{#isInAssemblyMode}
 
 Checks whether the station is in assembly mode.
 
@@ -81,7 +88,7 @@ Checks whether the station is in assembly mode.
 
 ---
 
-### `getStationName()`
+### `getStationName()`{#getStationName}
 
 Gets the station's current name.
 
@@ -95,7 +102,7 @@ Gets the station's current name.
 
 ---
 
-### `setStationName(name)`
+### `setStationName(name)` {#setStationName}
 
 Sets the station's name.
 
@@ -110,7 +117,7 @@ Sets the station's name.
 
 ---
 
-### `isTrainPresent()`
+### `isTrainPresent()` {#isTrainPresent}
 
 Checks whether a train is currently present at the station.
 
@@ -124,10 +131,12 @@ Checks whether a train is currently present at the station.
 
 ---
 
-### `isTrainImminent()`
+### `isTrainImminent()`{#isTrainImminent}
 
 Checks whether a train is imminently arriving at the station.
+
 Imminent is defined as being within 30 blocks of the station.
+
 This will not be true if the train has arrived and stopped at the station.
 
 **Returns**
@@ -144,7 +153,7 @@ This will not be true if the train has arrived and stopped at the station.
 
 ---
 
-### `isTrainEnroute()`
+### `isTrainEnroute()`{#isTrainEnroute}
 
 Checks whether a train is enroute and navigating to the station.
 
@@ -158,7 +167,8 @@ Checks whether a train is enroute and navigating to the station.
 
 ---
 
-### `getTrainName()`
+### `getTrainName()`{#getTrainName}
+
 
 Gets the currently present train's name.
 
@@ -188,7 +198,7 @@ Sets the currently present train's name.
 
 ---
 
-### `hasSchedule()`
+### `hasSchedule()`{#hasSchedule}
 
 Checks whether the currently present train has a schedule.
 
@@ -203,7 +213,7 @@ Checks whether the currently present train has a schedule.
 
 ---
 
-### `getSchedule()`
+### `getSchedule()`{#getSchedule}
 
 Gets the currently present train's schedule.
 
@@ -239,3 +249,76 @@ Sets the currently present train's schedule. This will overwrite the currently s
 **See also**
 
 - [Lua Train Schedules](./train-schedule.md) How train schedules are represented in Lua.
+
+---
+
+### `canTrainReach(destination)` {#canTrainReach}
+
+Tests if a route to the station named `destination` is possible from this station.
+
+Parameters
+- destination: `string` The name of the station to test the route to.
+
+**Returns**
+
+- `boolean` true if the route is possible, false if not.
+- `string` Reason why the route isn't possible if applicable. "no-target" if no path is found, "cannot-reach" if there's something in the way.
+
+**Throws**
+
+- If the station is not connected to a track.
+
+---
+
+
+### `distanceTo(destination)` {#distanceTo}
+
+Measures the distance between the station named `destination` and this station.
+
+Parameters
+- destination: `string` The name of the station to measure the route to.
+
+**Returns**
+
+- `number` the distance to the target station in meters (blocks) or nil if impossible.
+- `string` Reason why the route isn't possible if applicable. "no-target" if no path is found, "cannot-reach" if there's something in the way.
+
+**Throws**
+
+- If the station is not connected to a track.
+
+---
+
+::: tip Events
+The following are events that can be accessed with [`os.pullEvent(filter)`](https://tweaked.cc/module/os.html#v:pullEvent).
+:::
+
+### Event: `train_imminent`{#train_imminent}
+
+Triggers whenever a train's arrival is imminent.
+
+Imminent is defined as being within 30 blocks of the station.
+
+**Returns**
+
+- `string` Name of train.
+
+---
+
+### Event: `train_arrival` {#train_arrival}
+
+Triggers whenever a train arrives at the station.
+
+**Returns**
+
+- `string` Name of train.
+
+---
+
+### Event: `train_departure` {#train_departure}
+
+Triggers whenever a train departs from the station.
+
+**Returns**
+
+- `string` Name of train.
