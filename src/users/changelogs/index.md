@@ -14,6 +14,7 @@ The Create Project has gone through many iterations. You can find all of its cha
   - [Patch 5](6.0.5)
   - [Patch 6](6.0.6)
   - [Patch 7](6.0.7)
+  - [Patch 8](6.0.8)
 
 ---
 
@@ -74,8 +75,8 @@ The Create Project has gone through many iterations. You can find all of its cha
   - [Patch C](0.2.4c)
   - [Patch D](0.2.4d)
   - [Patch E](0.2.4e)
-  - [Version 0.2.3](0.2.3)
-  - [Version 0.2.2](0.2.2)
+- [Version 0.2.3](0.2.3)
+- [Version 0.2.2](0.2.2)
   - [Patch A](0.2.2a)
   - [Patch B](0.2.2b)
 - [Version 0.2.1](0.2.1)
