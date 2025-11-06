@@ -12,7 +12,7 @@ last thing we want is to give up on making features perfect for you just so it c
 | 1.21.2+         | Unsupported       |
 | 1.21.1          | Continued Support |
 | 1.20.2 - 1.21.0 | Skipped           |
-| 1.20.1          | Continued Support |
+| 1.20.1          | Available (6.0.8) |
 | 1.19.4          | Skipped           |
 | 1.19.2          | Available (0.5.1) |
 | 1.18.2          | Available (0.5.1) |
