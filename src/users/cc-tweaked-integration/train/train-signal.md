@@ -20,7 +20,7 @@ Gets the train signal's currently displayed signal, as how the trains see it.
 
 **Returns**
 
-- `string` The color of the signal currently displayed - either "GREEN" or "RED".
+- `string` The color of the signal currently displayed - either "RED", "GREEN" or "YELLOW" (Only on CROSS_SIGNAL types).
 
 
 ### `isForcedRed()` {#isForcedRed}
@@ -42,7 +42,7 @@ Goes back to default behaviour when losing connection with the computer.
 
 ### `getSignalType()` {#getSignalType}
 
-Gets the train signal's signal type (Normally toggled witha  wrench) as how the trains see it.
+Gets the train signal's signal type (Normally toggled with a wrench) as how the trains see it.
 
 **Returns**
 - `string` The signal type - either "ENTRY_SIGNAL" or "CROSS_SIGNAL".
@@ -70,5 +70,5 @@ Triggers whenever the signal changes.
 
 **Returns**
 
-- `string` Name of the signal it switched to, either "RED" or "GREEN".
+- `string` Name of the signal it switched to, either "RED", "GREEN" or "YELLOW" (Only on CROSS_SIGNAL types).
 
