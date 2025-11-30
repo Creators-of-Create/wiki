@@ -25,6 +25,6 @@ last thing we want is to give up on making features perfect for you just so it c
 
 _Supported_
 
-While the content is developed primarily on Forge, there is a dedicated team of developers maintaining a Fabric port of
-Create.  
+While the content is developed primarily on NeoForge,
+there is a dedicated team of developers maintaining a Fabric port of Create.
 Their Project Page can be found [here](https://www.curseforge.com/minecraft/mc-mods/create-fabric).

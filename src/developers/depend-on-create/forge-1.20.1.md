@@ -8,6 +8,10 @@ registrate_version: MC1.20-1.3.3
 prev: false
 ---
 
+::: danger Deprecated
+1.20.1 is no longer supported and will not be getting any feature updates or bug fixes.
+:::
+
 <!--@include: ./template.md-->
 
 ::: code-group
