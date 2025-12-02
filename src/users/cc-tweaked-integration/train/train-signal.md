@@ -70,5 +70,15 @@ Triggers whenever the signal changes.
 
 **Returns**
 
+- `string` Position of the signal that triggered this event, relative to the computer.
 - `string` Name of the signal it switched to, either "RED", "GREEN" or "YELLOW" (Only on CROSS_SIGNAL types).
 
+**Example**
+
+Print what signal has changed to what state in the terminal.
+```lua
+while true do
+    local event, side, status = os.pullEvent("train_signal_state_change")
+    print("Signal on side", side, "changed to", status)
+end
+```
