@@ -8,6 +8,10 @@ registrate_version: MC1.20-1.3.3
 prev: false
 ---
 
+::: danger [Unsupported](/users/development-status#supported-versions)
+Create for 1.20.1 is no longer receiving any feature updates or bugs fixes. We suggest you focus on developing for [1.21.1](neoforge-1.21.1) instead.
+:::
+
 <!--@include: ./template.md-->
 
 ::: code-group

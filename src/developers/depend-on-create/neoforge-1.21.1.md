@@ -1,12 +1,16 @@
 ---
 minecraft_version: 1.21.1
-create_version: 6.0.8-168
-ponder_version: 1.0.64
+create_version: 6.0.9-214
+ponder_version: 1.0.81
 flywheel_version: 1.0.5
-registrate_version: MC1.21-1.3.0+62
+registrate_version: MC1.21-1.3.0+67
 
 next: false
 ---
+
+::: warning Updating from 6.0.8 and earlier
+The dependency path for ponder has changed, please make sure to adjust to that in your buildscript.
+:::
 
 <!--@include: ./template.md-->
 
@@ -20,7 +24,7 @@ repositories {
 
 dependencies {
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
+    implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
@@ -35,7 +39,7 @@ repositories {
 
 dependencies {
     implementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}:slim") { isTransitive = false }
-    implementation("net.createmod.ponder:Ponder-NeoForge-${property("minecraft_version")}:${property("ponder_version")}")
+    implementation("net.createmod.ponder:ponder-neoforge:${property("ponder_version")}+mc${property("minecraft_version")}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${property("minecraft_version")}:${property("flywheel_version")}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${property("minecraft_version")}:${property("flywheel_version")}")
     implementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
