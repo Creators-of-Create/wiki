@@ -301,6 +301,7 @@ Imminent is defined as being within 30 blocks of the station.
 
 **Returns**
 
+- `string` Name of station.
 - `string` Name of train.
 
 ---
@@ -311,6 +312,7 @@ Triggers whenever a train arrives at the station.
 
 **Returns**
 
+- `string` Name of station.
 - `string` Name of train.
 
 ---
@@ -321,4 +323,5 @@ Triggers whenever a train departs from the station.
 
 **Returns**
 
+- `string` Name of station.
 - `string` Name of train.
