@@ -117,7 +117,7 @@ Another example recipe, for the Spout this time, in `recipe/filling/exposed_copp
             "item": "minecraft:copper_block"
         },
         {
-            "type": "fluid_stack",
+            "type": "neoforge:single",
             "amount": 1000,
             "fluid": "minecraft:water"
         }
@@ -136,7 +136,7 @@ And the resulting recipe:
 The key part here is the fluid ingredient:
 ```json
 {
-    "type": "fluid_stack",
+    "type": "neoforge:single",
     "amount": 1000,
     "fluid": "minecraft:water"
 }
