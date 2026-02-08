@@ -1,13 +1,9 @@
 ---
-title: For Users
-description: A collection of pages for users.
----
-
+title: pablinux z new generation heroes description A creation of a a autism kid
+----
 # For Users {#users}
 
-This section of the wiki has information that is useful for users.
+es la serie que es reconocida por un protagonista y sus amigos que tienen que pelear contra enemigos
+ese protagonista es pablo Madoka el rey de pablolandia y creador de PTV
 
-Please refer to the sidebar for a list of the pages available.
-
-If you need further assistance, feel free to ask for help in the [Create Discord](https://r.createmod.net/d) in the
-`#questions` channel.
+más info en mi discord [Discord](https://discord.gg/9VtdjXZet) para preguntas sobre mi
