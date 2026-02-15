@@ -23,7 +23,7 @@ Gets the current rotation speed of the attached components.
 The following are events that can be accessed with [`os.pullEvent(filter)`](https://tweaked.cc/module/os.html#v:pullEvent).
 :::
 
-### Event: `stress_change`{#stress_change}
+### Event: `speed_change`{#speed_change}
 
 Triggers whenever the network's speed changes.
 
