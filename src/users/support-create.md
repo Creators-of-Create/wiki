@@ -6,6 +6,20 @@ to gain advantages over other players in regard to your feature suggestions or y
 
 ---
 
+### Important notice (March 2026 until further notice)
+Notice from simibubi:
+
+Because of the success of Create, Myself and Kryppers have been approached by the Hytale team to assist with game design.  
+For however long they'll have us, we'll be focused on creating new game mechanics with them.  
+
+What does this mean for Create?
+* Create for Minecraft is not 'over' and is not being handed off. The team is simply busier than usual, and isn't focusing on developing big new features. The Create team will still aim to help the community where we can.
+* Create is not being ported to Hytale. Our role there is to improve the core game first. There is still some foundational work to be done before something like animated mechanical systems could even be considered. (I will do my best to convince them).
+
+Given that my current focus is on Hytale, you might want to reconsider supporting, as this may not be what you expected.
+
+---
+
 <a href="https://www.patreon.com/simibubi">
     <img alt="patreon-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/patreon-plural_vector.svg">
 </a>
