@@ -1,15 +1,13 @@
 ---
 minecraft_version: 1.21.1
-create_version: 6.0.9-280
-ponder_version: 1.0.82
-flywheel_version: 1.0.6
-registrate_version: MC1.21-1.3.0+67
+create_version: 6.0.11-283
 
 next: false
 ---
 
-::: warning Updating from 6.0.8 and earlier
-The dependency path for ponder has changed, please make sure to adjust to that in your buildscript.
+::: danger Updating from 6.0.10 and earlier
+The instructions for depending on create have changed, you no longer need to have transitive set to false and you
+no longer need to use the jar with the slim classifier, see the updated instructions below.
 :::
 
 <!--@include: ./template.md-->
@@ -23,11 +21,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
-    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
-    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
-    implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+    api("com.simibubi.create:create-${minecraft_version}:${create_version}")
 }
 ```
 
@@ -38,11 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}:slim") { isTransitive = false }
-    implementation("net.createmod.ponder:ponder-neoforge:${property("ponder_version")}+mc${property("minecraft_version")}")
-    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${property("minecraft_version")}:${property("flywheel_version")}")
-    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${property("minecraft_version")}:${property("flywheel_version")}")
-    implementation("com.tterrag.registrate:Registrate:${property("registrate_version")}")
+    api("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}")
 }
 ```
 
@@ -53,9 +43,6 @@ And in your `gradle.properties` file:
 ```properties-vue [gradle.properties]
 minecraft_version = {{ $frontmatter.minecraft_version }}
 create_version = {{ $frontmatter.create_version }}
-ponder_version = {{ $frontmatter.ponder_version }}
-flywheel_version = {{ $frontmatter.flywheel_version }}
-registrate_version = {{ $frontmatter.registrate_version }}
 ```
 
 ### Production Environment Dependency

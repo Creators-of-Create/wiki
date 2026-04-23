@@ -59,9 +59,9 @@ a [development environment dependency](#development-environment-dependency).
 
 ### Development Environment Dependency
 
-This type of dependency is added to the Gradle buildscript so that Gradle and your IDE can find Create"s code.
+This type of dependency is added to the Gradle buildscript so that Gradle and your IDE can find Create's code.
 
 #### Configuration
 
-The following code defines the maven where Create, Flywheel,
+The following code defines the mavens where Create, Flywheel,
 and Registrate jars are hosted and defines dependencies on those.
