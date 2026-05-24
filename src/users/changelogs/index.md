@@ -16,7 +16,8 @@ The Create Project has gone through many iterations. You can find all of its cha
   - [Patch 7](6.0.7)
   - [Patch 8](6.0.8)
   - [Patch 9](6.0.9)
-
+  - [Patch 10](6.0.10)
+  
 ---
 
 - **[Version 0.5.1 - Rise & Shine](0.5.1)**
