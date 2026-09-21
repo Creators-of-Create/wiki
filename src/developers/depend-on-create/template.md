@@ -59,7 +59,7 @@ a [development environment dependency](#development-environment-dependency).
 
 ### Development Environment Dependency
 
-This type of dependency is added to the Gradle buildscript so that Gradle and your IDE can find Create"s code.
+This type of dependency is added to the Gradle buildscript so that Gradle and your IDE can find Create's code.
 
 #### Configuration
 
