@@ -31,7 +31,7 @@ Gets the PostBox's configuration.
 
 **Returns**
 
-- `string` With either `"send_recieve"` or `"send"` as the configuration. 
+- `string` With either `"send_receive"` or `"send"` as the configuration. 
 
 ---
 
@@ -120,13 +120,13 @@ If the address arg is nil, it'll unset the address.
 
 ### `setConfiguration(configuration)` {#setConfiguration}
 
-Sets the PostBox's configuration to either `"send_recieve"` or `"send"`, represented by the bottoms on the bottom left of it's gui.
-- `"send_recieve"` will only send out packages that don't match the PostBox's address, and it will recieve packages that match it's address.
+Sets the PostBox's configuration to either `"send_receive"` or `"send"`, represented by the bottoms on the bottom left of it's gui.
+- `"send_receive"` will only send out packages that don't match the PostBox's address, and it will recieve packages that match it's address.
 - `"send"` will send out all packages and not recieve any packages.
 
 **Parameters**
 
-- _address:_ `string` The desired configuration, either `"send_recieve"` or `"send"`.
+- _address:_ `string` The desired configuration, either `"send_receive"` or `"send"`.
 
 ---
 
