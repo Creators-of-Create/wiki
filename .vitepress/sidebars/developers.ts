@@ -30,7 +30,7 @@ export default {
             },
             {
               text: "Fabric",
-              link: "https://github.com/Fabricators-of-Create/create-fabric-addon-template",
+              link: "https://github.com/snackbag/create-fabric-addon-template",
             },
             {
               text: "Multiloader",
