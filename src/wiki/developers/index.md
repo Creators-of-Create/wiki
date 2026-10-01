@@ -2,7 +2,10 @@
 title: For Developers
 description: A collection of resources for developers.
 
-next: false
+prev: false
+next:
+ text: 'Getting Started'
+ link: './getting-started'
 ---
 
 # For Developers {#developers}
