@@ -38,11 +38,18 @@ export default {
             },
           ],
         },
-        // TODO - Finish
-        // {
-        //   text: "API Documentation",
-        //   link: "/developers/api-docs",
-        // },
+        {
+          text: "API Documentation",
+          // TODO: Write the API Docs page
+          // link: "/developers/api-docs",
+          collapsed: true,
+          items: [
+            {
+              text: "Custom Recipes",
+              link: "/developers/api-docs/recipes",
+            },
+          ]
+        },
         {
           text: "Useful Tags",
           collapsed: true,
