@@ -18,7 +18,7 @@ found [here](https://www.curseforge.com/minecraft/mc-mods/create-fabric).
 |------------------|-------------------------------------------|---------------------------------------------------------|
 | 26.1             | In Progress                               | In Progress                                             |
 | 1.21.2 - 1.21.11 | Skipped                                   | Skipped                                                 |
-| 1.21.1           | Continuted Support                        | Skipped                                                 |
+| 1.21.1           | Continued Support                         | Skipped                                                 |
 | 1.20.2 - 1.21.0  | Skipped                                   | Skipped                                                 |
 | 1.20.1           | Available (6.0.8)                         | Available (6.0.8.1)                                     |
 | 1.19.4           | Skipped                                   | Skipped                                                 |
