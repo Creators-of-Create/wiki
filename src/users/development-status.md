@@ -12,7 +12,7 @@ for you just so it can be ready in time.
 
 While the content is developed primarily on NeoForge, there is a dedicated team of developers
 maintaining a Fabric port of Create. Their Project Page can be
-found [here](https://www.curseforge.com/minecraft/mc-mods/create-fabric).
+found on [Curseforge](https://www.curseforge.com/minecraft/mc-mods/create-fabric) or [Modrinth](https://modrinth.com/mod/create-fabric).
 
 | Minecraft        | [Create](https://modrinth.com/mod/create) | [Create Fabric](https://modrinth.com/mod/create-fabric) |
 |------------------|-------------------------------------------|---------------------------------------------------------|
