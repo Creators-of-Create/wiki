@@ -43,6 +43,12 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+@font-face {
+  font-family: Minecraft;
+  src: url("https://minecraft.wiki/images/Minecraft.woff2") format("woff2"),
+    url("https://minecraft.wiki/images/Minecraft.woff") format("woff");
+}
+
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
