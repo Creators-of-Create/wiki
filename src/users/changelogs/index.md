@@ -2,6 +2,8 @@
 next: false
 ---
 
+# Changelogs
+
 The Create Project has gone through many iterations. You can find all of its changelogs here:
 
 ---

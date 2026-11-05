@@ -6,8 +6,8 @@ export default {
       text: "For Users",
       link: "/users",
       items: [
-        // TODO - Finish this
-        // { text: "Common Issues", link: "/users/common-issues" },
+        // TODO - Continue working on this
+        { text: "Common Issues", link: "/users/common-issues" },
         {
           text: "Development Status",
           link: "/users/development-status",
