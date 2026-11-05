@@ -3,22 +3,23 @@ prev: false
 ---
 
 # Common Issues
+
 Certain issues occur in certain versions of Create.  
 These versions are denoted in the mod filename: `create-minecraftVersion-modVersion.jar`   
-For example: `create-1.21.1-6.0.10.jar` would be `6.0.10`
+For example: `create-1.21.1-6.0.10.jar` would be version `6.0.10`
 
-If you find unexpected behaviour that's not listed here, please check [Create Discord](https://r.createmod.net/d) in the `#bugs` channel or [Github issues](https://github.com/Creators-of-Create/Create/issues).
+If you find unexpected behaviour that's not listed here, please check the [Create Discord](https://r.createmod.net/d) in the `#bugs` channel or [Github issues](https://github.com/Creators-of-Create/Create/issues).
 
-## Known Bugs
+## Known Issues
 
-<details>
-<summary>Create <code>6.0.10</code></summary>
+<details> <!-- Dropdown so that future versions can be documented -->
+<summary><a>Create</a> <code>6.0.10</code></summary> <!-- <a> so that users know to click the button </3 -->
 
 ##### Gearbox crashes game when connected to rope pulley with a mechanical drill and Bricks World: [Github Issue](https://github.com/Creators-of-Create/Create/issues/10218)
-- Remove Create to rejoin the world. This bug is set to be fixed in version `6.0.11`.
+- Remove Create to rejoin the world and remove the contraption. This bug is set to be fixed in version `6.0.11`.
 
 ##### Potato cannon and YDM's weapon master mod caused a crash upon entering the world: [Github Issue](https://github.com/Creators-of-Create/Create/issues/10799).
-- Mods are currently incompatible with each other and will not work while in the same modpack.
+- These mods are currently incompatible with each other and will not work while in the same modpack.
 
 </details>
 
@@ -41,6 +42,6 @@ Usually, [removed features](https://github.com/Creators-of-Create/Create/wiki/Re
 
 ### Can I modify the recipes added by Create?
 Yes. All recipes are created within Minecraft's datapack system and can be changed, just like the ones from the base game.  
-KubeJS is recommended to customise Create on a larger scale.
+[KubeJS](https://kubejs.com/) is recommended to customise Create on a larger scale.
 
 
